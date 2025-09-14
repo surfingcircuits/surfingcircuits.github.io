@@ -105,7 +105,7 @@ analytics:
 collections:
   tpmm:
     output: true
-    permalink: /TPMM/:path/
+    permalink: /:collection/:path/
 
 
 # Site Author
