@@ -5,5 +5,5 @@ permalink: /tpmm/
 ---
 
 {% for item in site.tpmm %}
-  {% include archive-single.html %}
+- [{{ item.title }}]({{ item.url | relative_url }})
 {% endfor %}
