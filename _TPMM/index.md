@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Técnicas y procesos de montaje y mantenimiento de equipos electrónicos"
 layout: archive
 permalink: /TPMM/
 ---
@@ -7,14 +7,14 @@ permalink: /TPMM/
 # Técnicas y procesos de montaje y mantenimiento de equipos electrónicos
 {: .text-center}
 
-Bienvenido al índice de contenidos de la asignatura.  
-Aquí encontrarás los temas organizados en orden de estudio.
+Bienvenido al índice de contenidos del módulo.  
+Aquí encontrarás todo el material teórico utilizado em clase.
 
 ---
 
 ## Índice de temas
 <ol>
-{% for item in site.tpmm %}
+{% for item in site.TPMM %}
   <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
 {% endfor %}
 </ol>
