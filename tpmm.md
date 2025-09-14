@@ -4,18 +4,16 @@ layout: archive
 permalink: /tpmm/
 ---
 
-# Técnicas y procesos de montaje y mantenimiento de equipos electrónicos
-
 Aquí encontrarás el material del módulo.
 
 ---
 
-## Unidad 1: Fundamentos
+## Introducción a Kicad
 
-| Tema | Resumen |
+| Contenido | Resumen |
 |------|--------|
-| [Tema 1: Introducción](/tpmm/prueba_primer_post/) | Breve resumen del tema 1 |
-| [Tema 2: Fundamentos](/tpmm/tema_2/) | Breve resumen del tema 2 |
+| [Introducción](/tpmm/prueba_primer_post/) | Consideraciones iniciales sobre el software Kicad |
+| [Interfaz](/tpmm/tema_2/) | Funcionalidades de la interfaz |
 
 ---
 
