@@ -1,6 +1,6 @@
 ---
-title: "Prueba titulo"
-layout: archive
+title: "Índice TPMM"
+layout: collection
 permalink: /tpmm/
 collection: tpmm
 entries_layout: grid
