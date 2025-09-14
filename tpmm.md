@@ -14,24 +14,47 @@ Aquí encontrarás todo el material teórico utilizado en clase.
 
 ## Unidad 1: Fundamentos
 
-| Tema | Resumen |
-|------|--------|
-| [Tema 1: Introducción](/tpmm/prueba_primer_post/) | Breve resumen del tema 1 |
-| [Tema 2: Fundamentos](/tpmm/tema_2/) | Breve resumen del tema 2 |
+<div class="grid-wrapper">
+
+<div class="grid-item card">
+### [Tema 1: Introducción](/tpmm/tema-1/)
+Breve resumen del tema 1
+</div>
+
+<div class="grid-item card">
+### [Tema 2: Fundamentos](/tpmm/tema-2/)
+Breve resumen del tema 2
+</div>
+
+</div>
 
 ---
 
 ## Unidad 2: Aplicaciones
 
-| Tema | Resumen |
-|------|--------|
-| [Tema 3: Prácticas](/tpmm/tema-3/) | Breve resumen del tema 3 |
-| [Tema 4: Ejercicios](/tpmm/tema-4/) | Breve resumen del tema 4 |
+<div class="grid-wrapper">
+
+<div class="grid-item card">
+### [Tema 3: Prácticas](/tpmm/tema-3/)
+Breve resumen del tema 3
+</div>
+
+<div class="grid-item card">
+### [Tema 4: Ejercicios](/tpmm/tema-4/)
+Breve resumen del tema 4
+</div>
+
+</div>
 
 ---
 
 ## Unidad 3: Mantenimiento
 
-| Tema | Resumen |
-|------|--------|
-| [Tema 5: Mantenimiento básico](/tpmm/tema-5/) | Breve resumen del tema 5 |
+<div class="grid-wrapper">
+
+<div class="grid-item card">
+### [Tema 5: Mantenimiento básico](/tpmm/tema-5/)
+Breve resumen del tema 5
+</div>
+
+</div>
