@@ -1,5 +1,6 @@
 ---
 title: "Introducción a KICAD"
+layout: single
 excerpt: "The Lhasa Apso is a non-sporting dog breed originating in Tibet."
 ---
 
