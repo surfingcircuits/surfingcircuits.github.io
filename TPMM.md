@@ -4,9 +4,11 @@ layout: archive
 permalink: /TPMM/
 collection: TPMM
 entries_layout: grid
+excerpt: "Bienvenido al índice de contenidos del módulo. Aquí encontrarás todo el material teórico utilizado en clase."
 ---
 
-Bienvenido al índice de contenidos del módulo.  
-Aquí encontrarás todo el material teórico utilizado em clase.
+# Prueba con un corchete
+
+## Prueba con dos corchetes
 
 ---
