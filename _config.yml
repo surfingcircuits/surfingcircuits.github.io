@@ -30,7 +30,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 collections:
   TPMM:
     output: true
-    permalink: /:collection/:path/
+    permalink: /TPMM/:path/
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
