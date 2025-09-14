@@ -28,7 +28,7 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 logo                     : "/assets/images/surfer_circle.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 collections:
-  TPMM:
+  tpmm:
     output: true
     permalink: /TPMM/:path/
 # breadcrumbs            : false # true, false (default)
