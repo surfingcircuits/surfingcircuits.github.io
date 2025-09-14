@@ -13,7 +13,5 @@ Bienvenido al índice de contenidos del módulo.
 Aquí encontrarás todo el material teórico utilizado en clase.
 
 {% for item in site.tpmm %}
-  {% if item.url != "/TPMM/" %}
     {% include archive-single.html %}
-  {% endif %}
 {% endfor %}
