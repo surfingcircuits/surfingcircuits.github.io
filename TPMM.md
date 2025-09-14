@@ -2,7 +2,7 @@
 title: "Técnicas y procesos de montaje y mantenimiento de equipos electrónicos"
 layout: collection
 permalink: /TPMM/
-collection: tpmm
+collection: TPMM
 entries_layout: grid
 ---
 
