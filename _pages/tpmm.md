@@ -2,7 +2,7 @@
 title: TPMM
 layout: collection
 permalink: /TPMM/
-collection: tpmm
+collection: TPMM
 entries_layout: grid
 classes: wide
 ---
