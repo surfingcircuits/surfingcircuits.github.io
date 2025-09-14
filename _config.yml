@@ -297,10 +297,10 @@ defaults:
       show_date: true
       share: true
       related: true
-  # _TPMM
+  # _tpmm
   - scope:
       path: ""
-      type: TPMM
+      type: tpmm
     values:
       layout: single
       author_profile: false
