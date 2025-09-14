@@ -1,7 +1,7 @@
 ---
 title: "Prueba titulo"
 layout: archive
-permalink: /TPMM/
+permalink: /tpmm/
 collection: tpmm
 entries_layout: grid
 ---
