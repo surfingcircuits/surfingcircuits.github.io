@@ -46,9 +46,9 @@ toc_sticky: true
 **1.** Abre **KiCad**.  
 **2.** Abre el **Editor de hoja de trabajo**.  
 **3.** Seleccionar el tamaño de hoja y orientación:  
-	**3.1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
-	**3.2.** Selecciona: **Tamaño: A4 210x297mm**.  
-	**3.3.** Selecciona: **Orientación: Horizontal**.
+  **3.1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
+  **3.2.** Selecciona: **Tamaño: A4 210x297mm**.  
+  **3.3.** Selecciona: **Orientación: Horizontal**.
 
 ### Personalizar la hoja de trabajo
 
@@ -71,8 +71,8 @@ Antes de dar por finalizada la plantilla podemos visualizar como quedará una ve
 
 **1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
 **2.** Rellena todos los campos que has dejado preparados en el cajetín:  
-	**2.1.** ${TITLE} → El título que tendrá el esquema.  
-	**2.2.** ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
+    **2.1.** ${TITLE} → El título que tendrá el esquema.  
+    **2.2.** ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
 	3. ${PAPER} → El tamaño del papel, en nuestro caso A4.
 	4. ${REVISION} → El número de versión en la que se encuentre el diseño.
 	5. %{ISSUE_DATE} → La fecha que indiquemos como entrega.
