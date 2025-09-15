@@ -28,3 +28,10 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+
+# Índice para las publicaciones de TPMM
+tpmm:
+  - title: "Unidad 1"
+  children:
+    - title: "Práctica 01"
+    url: /_tpmm/UP1_worksheet
