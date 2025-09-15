@@ -23,8 +23,8 @@ toc_sticky: true
 
 ## 🚀 Objetivos
 
-**•** Familiarizarse con la interfaz de KiCad.
-**•** Personalizar la hoja de dibujo.
+**•** Familiarizarse con la interfaz de KiCad.  
+**•** Personalizar la hoja de dibujo.  
 **•** Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
 
 ## 🧩 Contenidos trabajados
