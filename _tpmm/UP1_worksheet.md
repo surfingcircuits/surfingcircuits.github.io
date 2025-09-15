@@ -6,7 +6,7 @@ excerpt: "Como realizar el diseño de una hoja de trabajo personalizada en KiCad
 # Table of contents - shown in right side
 toc: true
 toc_label: "Índice"
-toc_icon: "fa-duotone fa-solid fa-list"
+toc_icon: "list"
 toc_sticky: true
 ---
 
