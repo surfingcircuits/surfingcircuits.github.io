@@ -1,22 +1,62 @@
 ---
-layout: default
+layout: splash
+author_profile: false
 ---
 
-{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
-{% endif %}
+<!-- Hero principal -->
+<section class="splash-hero">
+  <div class="splash-hero__content">
+    <h1>Bienvenido al IES Laurona</h1>
+    <p>Explora las publicaciones más recientes y el material del módulo TPMM.</p>
+  </div>
+</section>
 
-<div id="main" role="main">
-  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
-    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
-    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+<!-- Publicaciones recientes -->
+<section class="recent-posts">
+  <h2>Publicaciones recientes</h2>
+  
+  {% assign all_entries = site.posts | concat: site.tpmm %}
+  {% assign all_entries = all_entries | sort: 'date' | reverse %}
 
-    <section class="page__content" itemprop="text">
-      {{ content }}
-    </section>
-  </article>
-</div>
+  <div class="custom-grid">
+    {% for post in all_entries limit:10 %}
+      <div class="card">
+        <a href="{{ post.url | relative_url }}">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% endif %}
+          <h3>{{ post.title }}</h3>
+          {% if post.excerpt %}
+            <p>{{ post.excerpt }}</p>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="archive__links">
+    <p><a href="/year-archive/">Ver todos los posts</a></p>
+    <p><a href="/tpmm/">Ver todas las entradas de TPMM</a></p>
+  </div>
+</section>
+
+<!-- CSS interno para el grid -->
+<style>
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-5px); }
+.card img { width: 100%; height: auto; display: block; }
+.card h3 { margin: 0.5rem 1rem 0 1rem; }
+.card p { margin: 0.5rem 1rem 1rem 1rem; }
+</style>
