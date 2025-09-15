@@ -2,6 +2,14 @@
 title: "TPMM"
 layout: archive
 permalink: /tpmm/
+# Table of contents - shown in right side
+toc: true
+toc_label: "Módulo TPMM"
+toc_icon: "compass"
+toc_sticky: true
+sidebar:
+  nav: tpmm
+  sticky: true
 ---
 
 Aquí encontrarás el material del módulo **Técnicas y procesos de montaje y mantenimiento de equipos electrónicos** impartido en el IES Laurona (Llíria).
