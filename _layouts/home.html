@@ -2,11 +2,11 @@
 layout: archive
 ---
 
-{{ content }}
-
 <h3 class="archive__subtitle">
   {{ site.data.ui-text[site.locale].recent_posts | default: "Publicaciones recientes" }}
 </h3>
+
+{{ content }}
 
 {% comment %}
   Recogemos los posts de _posts y las entradas de la colección _tpmm
@@ -14,7 +14,7 @@ layout: archive
 {% assign all_entries = site.posts | concat: site.tpmm %}
 {% assign all_entries = all_entries | sort: 'date' | reverse %}
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign entries_layout = page.entries_layout | default: 'grid' %}
 <div class="entries-{{ entries_layout }}">
   {% for post in all_entries limit:10 %}
     {% assign post = post %}
@@ -24,5 +24,5 @@ layout: archive
 
 <div class="archive__links">
   <p><a href="/year-archive/">Ver todos los posts</a></p>
-  <p><a href="/tpmm/">Ver todas las entradas de TPMM</a></p>
+  <p><a href="/tpmm/">Ver todas las publicaciones de TPMM</a></p>
 </div>
