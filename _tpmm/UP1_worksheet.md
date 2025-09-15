@@ -36,19 +36,20 @@ toc_sticky: true
 
 ## 💻 Materiales y recursos
 
-**·** Software **KiCad (versión 7 o superior)**.  
+**·** Software **KiCad (versión 7 o superior)**.
+• Sin negrita.
 **●** Logotipo del centro en formato `.png`.  
-- cosas variadas........
+**•** cosas variadas........
 ## 🧭 Desarrollo de la práctica
 
 ### Configurar el editor de hoja de trabajo
 
-1. Abre **KiCad**.
-2. Abre el **Editor de hoja de trabajo**.
-3. Seleccionar el tamaño de hoja y orientación:
-	1. Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.
-	2. Selecciona: **Tamaño: A4 210x297mm**.
-	3. Selecciona: **Orientación: Horizontal**.
+**1.** Abre **KiCad**.
+**2.** Abre el **Editor de hoja de trabajo**.
+**3.** Seleccionar el tamaño de hoja y orientación:
+	**3.1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.
+	**3.2.** Selecciona: **Tamaño: A4 210x297mm**.
+	**3.3.** Selecciona: **Orientación: Horizontal**.
 
 ### Personalizar la hoja de trabajo
 
