@@ -12,7 +12,8 @@ toc_sticky: true
 
 **Práctica 01**
 
->ℹ️ **Empieza aquí:**  
+>ℹ️ **Empieza aquí:**
+>
 > El diseño de esquemas electrónicos no solo consiste en representar circuitos, sino también en documentarlos de manera clara y profesional. Una hoja de trabajo personalizada permite mostrar la información esencial de cada proyecto en todas y cada una de las hojas que lo compongan.  
 > 
 > En el cajetín de la hoja de trabajo se deben incluir los campos clave del proyecto, como **título**, **autor**, **fecha** y **revisión**, de manera que cada esquema quede correctamente identificado y documentado.
@@ -20,13 +21,12 @@ toc_sticky: true
 > En esta práctica aprenderás a utilizar el **editor de hojas de trabajo de KiCad** para crear tu propia plantilla, que servirá como base para futuros proyectos. De este modo, además de familiarizarte con la interfaz del editor, comprenderás la importancia de la normalización en el ámbito profesional de la electrónica.
 {: .notice--info}
 
+---
 
 ## 🚀 Objetivos
 - Familiarizarse con la interfaz de KiCad.
 - Personalizar la hoja de dibujo.
 - Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
-
----
 
 ## 🧩 Contenidos trabajados
 - Configuración inicial de proyectos en KiCad.  
@@ -34,43 +34,42 @@ toc_sticky: true
 - Introducción de datos de identificación en esquemas: título, autor, fecha, versión, logotipo.  
 - Guardado de la plantilla para reutilización en futuros proyectos.  
 
----
-
 ## 💻 Materiales y recursos
 - Software **KiCad (versión 7 o superior)**.  
 - Logotipo del centro.  
-
----
 
 ## 🧭 Desarrollo de la práctica
 
 ### Configurar el editor de hoja de trabajo
 
-1. Abrir **KiCad**.
-2. Abrir el **Editor de hoja de trabajo**.
+1. Abre **KiCad**.
+2. Abre el **Editor de hoja de trabajo**.
 3. Seleccionar el tamaño de hoja y orientación:
-	1. Menú **Ver → Configuración de previsualización de página**.
-	2. Seleccionar **Tamaño: A4 210x297mm**.
-	3. Seleccionar **Orientación: Horizontal**.
+	1. Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.
+	2. Selecciona: **Tamaño: A4 210x297mm**.
+	3. Selecciona: **Orientación: Horizontal**.
 
 ### Personalizar la hoja de trabajo
 
 Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobre la que se dibujará:
 
-1. Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.
+**1.** Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.
+
 2. Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.
 3. Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.
-4. Modificar el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
+4. Modifica el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
 
 ![Detalle del cajetín](/assets/tpmm/worksheet_detail.png "Detalle del cajetín")
 
->**Nota:** Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: `${VARIABLE}`.
+>**Nota:**
+>Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada archivo, se encuentran definidas entre los símbolos `${` `}` de la siguiente forma: `${VARIABLE}`.
 {: .notice--warning}
 
 ### Visualizar la plantilla
+
 Antes de dar por finalizada la plantilla podemos visualizar como quedará una vez rellenemos los campos que hemos preparado:
 
-1. Menú **Ver → Configuración de previsualización de página**.
+1. Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.
 2. Rellena todos los campos que has dejado preparados en el cajetín:
 	1. ${TITLE} → El título que tendrá el esquema.
 	2. ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".
@@ -83,10 +82,8 @@ Antes de dar por finalizada la plantilla podemos visualizar como quedará una ve
 	9. ${FILENAME} → Nombre del archivo.
 	10. Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas. 
 	11. ${COMMENT1} → Aquí indicaremos el nombre del diseñador.
-3. Guardar la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.
+3. Guarda la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.
 4. Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
-
----
 
 ## ✅ Criterios de evaluación
 
