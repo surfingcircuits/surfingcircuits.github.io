@@ -50,7 +50,7 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 
 ![Esquema del circuito](assets/worksheet_detail.png "Circuito básico")
 
-{% include note.html content="Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: <b>${VARIABLE}</b>." %}
+**Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: ${VARIABLE}.**
 
 ### Visualizar la plantilla
 Antes de dar por finalizada la plantilla podemos visualizar como quedará una vez rellenemos los campos que hemos preparado:
