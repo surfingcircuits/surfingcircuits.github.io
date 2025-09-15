@@ -5,7 +5,7 @@ date: 2025-09-15
 excerpt: "Como realizar el diseño de una hoja de trabajo personalizada en KiCad."
 # Table of contents - shown in right side
 toc: true
-toc_label: "On this page"
+toc_label: "Índice"
 toc_icon: "file-alt"
 toc_sticky: true
 ---
@@ -73,7 +73,7 @@ Antes de dar por finalizada la plantilla podemos visualizar como quedará una ve
 	9. ${FILENAME} → Nombre del archivo.
 	10. Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas. 
 	11. ${COMMENT1} → Aquí indicaremos el nombre del diseñador.
-3. Guardar la hoja personalizada como plantilla siguiendo el siguiente formato **_apellido_\_worksheet.kicad_wks**.
+3. Guardar la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.
 4. Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
 
 ---
