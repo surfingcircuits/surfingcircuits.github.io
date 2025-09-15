@@ -3,9 +3,11 @@ title: "Diseño de una hoja de trabajo"
 layout: single
 date: 2025-09-15
 excerpt: "Como realizar el diseño de una hoja de trabajo personalizada en KiCad."
+# Table of contents - shown in right side
 toc: true
-toc_label: "Índice"
-toc_icon: "list"
+toc_label: "On this page"
+toc_icon: "file-alt"
+toc_sticky: true
 ---
 
 # 📝 Práctica 1 – Creación de una hoja de dibujo personalizada en KiCad
