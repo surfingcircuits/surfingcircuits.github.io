@@ -37,8 +37,8 @@ toc_sticky: true
 ## 💻 Materiales y recursos
 
 **·** Software **KiCad (versión 7 o superior)**.  
-**·** Logotipo del centro en formato `.png`.  
-
+**●** Logotipo del centro en formato `.png`.  
+- cosas variadas........
 ## 🧭 Desarrollo de la práctica
 
 ### Configurar el editor de hoja de trabajo
