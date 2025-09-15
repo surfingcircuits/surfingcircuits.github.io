@@ -1,5 +1,5 @@
 ---
-title: "Diseño de una hoja de trabajo"
+title: "P01 - Diseño de una hoja de trabajo"
 layout: single
 date: 2025-09-15
 excerpt: "Como realizar el diseño de una hoja de trabajo personalizada en KiCad."
@@ -10,7 +10,16 @@ toc_icon: "file-alt"
 toc_sticky: true
 ---
 
-# 📝 Práctica 1 – Creación de una hoja de dibujo personalizada en KiCad
+**Práctica 01**
+
+>ℹ️ **Empieza aquí:**  
+> El diseño de esquemas electrónicos no solo consiste en representar circuitos, sino también en documentarlos de manera clara y profesional. Una hoja de trabajo personalizada permite mostrar la información esencial de cada proyecto en todas y cada una de las hojas que lo compongan.  
+> 
+> En el cajetín de la hoja de trabajo se deben incluir los campos clave del proyecto, como **título**, **autor**, **fecha** y **revisión**, de manera que cada esquema quede correctamente identificado y documentado.
+> 
+> En esta práctica aprenderás a utilizar el **editor de hojas de trabajo de KiCad** para crear tu propia plantilla, que servirá como base para futuros proyectos. De este modo, además de familiarizarte con la interfaz del editor, comprenderás la importancia de la normalización en el ámbito profesional de la electrónica.
+{: .notice--info}
+
 
 ## 🚀 Objetivos
 - Familiarizarse con la interfaz de KiCad.
@@ -55,8 +64,8 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 
 ![Detalle del cajetín](/assets/tpmm/worksheet_detail.png "Detalle del cajetín")
 
-**Nota:** Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: `${VARIABLE}`.
-{: .notice--info}
+>**Nota:** Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: `${VARIABLE}`.
+{: .notice--warning}
 
 ### Visualizar la plantilla
 Antes de dar por finalizada la plantilla podemos visualizar como quedará una vez rellenemos los campos que hemos preparado:
