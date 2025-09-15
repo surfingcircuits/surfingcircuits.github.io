@@ -23,16 +23,16 @@ toc_sticky: true
 
 ## 🚀 Objetivos
 
-- Familiarizarse con la interfaz de KiCad.
-- Personalizar la hoja de dibujo.
-- Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
+**•** Familiarizarse con la interfaz de KiCad.
+**•** Personalizar la hoja de dibujo.
+**•** Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
 
 ## 🧩 Contenidos trabajados
 
-- Configuración inicial de proyectos en KiCad.  
-- Creación y edición de plantillas de hoja de dibujo.  
-- Introducción de datos de identificación en esquemas: título, autor, fecha, versión, logotipo.  
-- Guardado de la plantilla para reutilización en futuros proyectos.  
+**•** Configuración inicial de proyectos en KiCad.  
+**•** Creación y edición de plantillas de hoja de dibujo.  
+**•** Introducción de datos de identificación en esquemas: título, autor, fecha, versión, logotipo.  
+**•** Guardado de la plantilla para reutilización en futuros proyectos.  
 
 ## 💻 Materiales y recursos
 
@@ -46,9 +46,9 @@ toc_sticky: true
 **1.** Abre **KiCad**.  
 **2.** Abre el **Editor de hoja de trabajo**.  
 **3.** Seleccionar el tamaño de hoja y orientación:  
-  **3.1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
-  **3.2.** Selecciona: **Tamaño: A4 210x297mm**.  
-  **3.3.** Selecciona: **Orientación: Horizontal**.
+**-** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
+**-** Selecciona: **Tamaño: A4 210x297mm**.  
+**-** Selecciona: **Orientación: Horizontal**.
 
 ### Personalizar la hoja de trabajo
 
@@ -71,26 +71,22 @@ Antes de dar por finalizada la plantilla podemos visualizar como quedará una ve
 
 **1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
 **2.** Rellena todos los campos que has dejado preparados en el cajetín:  
-    **2.1.** ${TITLE} → El título que tendrá el esquema.  
-    **2.2.** ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
-	3. ${PAPER} → El tamaño del papel, en nuestro caso A4.
-	4. ${REVISION} → El número de versión en la que se encuentre el diseño.
-	5. %{ISSUE_DATE} → La fecha que indiquemos como entrega.
-	6. ${CURRENT_DATE} → Se refresca automáticamente cada vez que se abre la hoja con la fecha actual.
-	7. ${KICAD_VERSION} → Versión de KiCad utilizada.
-	8. ${SHEETPATH} → Ruta de la hoja actual.
-	9. ${FILENAME} → Nombre del archivo.
-	10. Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas. 
-	11. ${COMMENT1} → Aquí indicaremos el nombre del diseñador.
-3. Guarda la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.
-4. Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
+**-** ${TITLE} → El título que tendrá el esquema.  
+**-** ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
+**-** ${PAPER} → El tamaño del papel, en nuestro caso A4.  
+**-** ${REVISION} → El número de versión en la que se encuentre el diseño.  
+**-** %{ISSUE_DATE} → La fecha que indiquemos como entrega.  
+**-** ${CURRENT_DATE} → Se refresca automáticamente cada vez que se abre la hoja con la fecha actual.  
+**-** ${KICAD_VERSION} → Versión de KiCad utilizada.  
+**-** ${SHEETPATH} → Ruta de la hoja actual.  
+**-** ${FILENAME} → Nombre del archivo.  
+**-** Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas.  
+**-** ${COMMENT1} → Aquí indicaremos el nombre del diseñador.  
+**3.** Guarda la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.  
+**4.** Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
 
 ## ✅ Criterios de evaluación
 
-### RA relacionado
-- **RA1:** Dibuja esquemas de circuitos electrónicos, interpretando especificaciones de diseño y manejando software específico de CAD electrónico.  
-
-### Criterios de evaluación trabajados
-- **a)** Se ha obtenido la información para la realización de los esquemas o planos de las especificaciones de diseño.  
-- **b)** Se ha organizado la estructura y recursos que hay que utilizar de acuerdo con el programa de diseño.  
-- **i)** Se han identificado los componentes por sus nombres y/o valores (aplicado a la cumplimentación de campos de identificación en la hoja).  
+| Resultados de aprendizaje | Criterios de evaluación |
+|----------------|----------------------------------|
+| **RA1:** Dibuja esquemas de circuitos electrónicos, interpretando especificaciones de diseño y manejando software específico de CAD electrónico. | **a)** Se ha obtenido la información para la realización de los esquemas o planos de las especificaciones de diseño.<br>**b)** Se ha organizado la estructura y recursos que hay que utilizar de acuerdo con el programa de diseño.<br>**i)** Se han identificado los componentes por sus nombres y/o valores (aplicado a la cumplimentación de campos de identificación en la hoja). |
