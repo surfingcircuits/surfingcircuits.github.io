@@ -36,28 +36,27 @@ toc_sticky: true
 
 ## 💻 Materiales y recursos
 
-**·** Software **KiCad (versión 7 o superior)**.
-• Sin negrita.
-**●** Logotipo del centro en formato `.png`.  
-**•** cosas variadas........
+**•** Software **KiCad (versión 7 o superior)**.  
+**•** Logotipo del centro en formato `.png`.
+
 ## 🧭 Desarrollo de la práctica
 
 ### Configurar el editor de hoja de trabajo
 
-**1.** Abre **KiCad**.
-**2.** Abre el **Editor de hoja de trabajo**.
-**3.** Seleccionar el tamaño de hoja y orientación:
-	**3.1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.
-	**3.2.** Selecciona: **Tamaño: A4 210x297mm**.
+**1.** Abre **KiCad**.  
+**2.** Abre el **Editor de hoja de trabajo**.  
+**3.** Seleccionar el tamaño de hoja y orientación:  
+	**3.1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
+	**3.2.** Selecciona: **Tamaño: A4 210x297mm**.  
 	**3.3.** Selecciona: **Orientación: Horizontal**.
 
 ### Personalizar la hoja de trabajo
 
 Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobre la que se dibujará:
 
-**1.** Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.
-**2.** Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.
-**3.** Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.
+**1.** Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.  
+**2.** Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.  
+**3.** Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.  
 **4.** Modifica el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
 
 ![Detalle del cajetín](/assets/tpmm/worksheet_detail.png "Detalle del cajetín")
@@ -70,10 +69,10 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 
 Antes de dar por finalizada la plantilla podemos visualizar como quedará una vez rellenemos los campos que hemos preparado:
 
-1. Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.
-2. Rellena todos los campos que has dejado preparados en el cajetín:
-	**2.1.** ${TITLE} → El título que tendrá el esquema.
-	2. ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".
+**1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
+**2.** Rellena todos los campos que has dejado preparados en el cajetín:  
+	**2.1.** ${TITLE} → El título que tendrá el esquema.  
+	**2.2.** ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
 	3. ${PAPER} → El tamaño del papel, en nuestro caso A4.
 	4. ${REVISION} → El número de versión en la que se encuentre el diseño.
 	5. %{ISSUE_DATE} → La fecha que indiquemos como entrega.
