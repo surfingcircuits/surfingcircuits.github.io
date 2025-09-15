@@ -304,6 +304,9 @@ defaults:
     values:
       layout: single
       toc: true
+      sidebar:
+        nav: tpmm
+        sticky: true
       author_profile: false
       read_time: true
       comments: true
