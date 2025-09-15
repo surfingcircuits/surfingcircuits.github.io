@@ -48,7 +48,7 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 3. Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.
 4. Modificar el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
 
-![Esquema del circuito](assets/worksheet_detail.png "Circuito básico")
+![Detalle del cajetín](./assets/worksheet_detail.png "Detalle del cajetín")
 
 **Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: ${VARIABLE}.**
 
