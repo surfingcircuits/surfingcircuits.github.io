@@ -1,19 +1,20 @@
 ---
-title: "Técnicas y procesos de montaje y mantenimiento de equipos electrónicos"
+title: "TPMM"
 layout: archive
 permalink: /tpmm/
 ---
 
-Aquí encontrarás el material del módulo.
+Aquí encontrarás el material del módulo **Técnicas y procesos de montaje y mantenimiento de equipos electrónicos** impartido en el IES Laurona (Llíria).
 
 ---
 
-## Introducción a Kicad
+## Unidad de Programación - 01
 
-| Contenido | Resumen |
-|------|--------|
-| [Introducción](/tpmm/UP1_worksheet/) | UP1 Personalización de una hoja de trabajo |
+| Enlace | Contenido |
+|:------:|:----------|
+| [Práctica 01](/tpmm/UP1_worksheet/) | Creación de una hoja de trabajo personalizada para utilizar como plantilla. |
 | [Interfaz](/tpmm/tema_2/) | Funcionalidades de la interfaz |
 
 ---
 
+## Unidad de Programación - 02
