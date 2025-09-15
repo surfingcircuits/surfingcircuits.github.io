@@ -55,7 +55,8 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 
 ![Detalle del cajetín](/assets/tpmm/worksheet_detail.png "Detalle del cajetín")
 
-**Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: ${VARIABLE}.**
+**Nota:** Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: `${VARIABLE}`.
+{: .notice--info}
 
 ### Visualizar la plantilla
 Antes de dar por finalizada la plantilla podemos visualizar como quedará una vez rellenemos los campos que hemos preparado:
