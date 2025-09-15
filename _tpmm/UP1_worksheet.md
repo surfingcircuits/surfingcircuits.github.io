@@ -21,22 +21,23 @@ toc_sticky: true
 > En esta práctica aprenderás a utilizar el **editor de hojas de trabajo de KiCad** para crear tu propia plantilla, que servirá como base para futuros proyectos. De este modo, además de familiarizarte con la interfaz del editor, comprenderás la importancia de la normalización en el ámbito profesional de la electrónica.
 {: .notice--info}
 
----
-
 ## 🚀 Objetivos
+
 - Familiarizarse con la interfaz de KiCad.
 - Personalizar la hoja de dibujo.
 - Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
 
 ## 🧩 Contenidos trabajados
+
 - Configuración inicial de proyectos en KiCad.  
 - Creación y edición de plantillas de hoja de dibujo.  
 - Introducción de datos de identificación en esquemas: título, autor, fecha, versión, logotipo.  
 - Guardado de la plantilla para reutilización en futuros proyectos.  
 
 ## 💻 Materiales y recursos
-- Software **KiCad (versión 7 o superior)**.  
-- Logotipo del centro.  
+
+**·** Software **KiCad (versión 7 o superior)**.  
+**·** Logotipo del centro en formato `.png`.  
 
 ## 🧭 Desarrollo de la práctica
 
@@ -54,10 +55,9 @@ toc_sticky: true
 Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobre la que se dibujará:
 
 **1.** Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.
-
-2. Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.
-3. Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.
-4. Modifica el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
+**2.** Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.
+**3.** Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.
+**4.** Modifica el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
 
 ![Detalle del cajetín](/assets/tpmm/worksheet_detail.png "Detalle del cajetín")
 
@@ -71,7 +71,7 @@ Antes de dar por finalizada la plantilla podemos visualizar como quedará una ve
 
 1. Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.
 2. Rellena todos los campos que has dejado preparados en el cajetín:
-	1. ${TITLE} → El título que tendrá el esquema.
+	**2.1.** ${TITLE} → El título que tendrá el esquema.
 	2. ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".
 	3. ${PAPER} → El tamaño del papel, en nuestro caso A4.
 	4. ${REVISION} → El número de versión en la que se encuentre el diseño.
