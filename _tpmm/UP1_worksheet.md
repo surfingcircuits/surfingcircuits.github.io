@@ -3,6 +3,9 @@ title: "Diseño de una hoja de trabajo"
 layout: single
 date: 2025-09-15
 excerpt: "Como realizar el diseño de una hoja de trabajo personalizada en KiCad."
+toc: true
+toc_label: "Índice"
+toc_icon: "list"
 ---
 
 # 📝 Práctica 1 – Creación de una hoja de dibujo personalizada en KiCad
@@ -48,7 +51,7 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 3. Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.
 4. Modificar el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
 
-![Detalle del cajetín](./assets/worksheet_detail.png "Detalle del cajetín")
+![Detalle del cajetín](/assets/tpmm/worksheet_detail.png "Detalle del cajetín")
 
 **Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada proyecto, se encuentran definidas de la siguiente forma: ${VARIABLE}.**
 
