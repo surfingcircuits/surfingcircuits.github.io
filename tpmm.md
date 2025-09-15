@@ -12,7 +12,7 @@ Aquí encontrarás el material del módulo.
 
 | Contenido | Resumen |
 |------|--------|
-| [Introducción](/tpmm/prueba_primer_post/) | Consideraciones iniciales sobre el software Kicad |
+| [Introducción](/tpmm/UP1_worksheet/) | UP1 Personalización de una hoja de trabajo |
 | [Interfaz](/tpmm/tema_2/) | Funcionalidades de la interfaz |
 
 ---
