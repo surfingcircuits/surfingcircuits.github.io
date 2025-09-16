@@ -27,6 +27,11 @@ toc_sticky: true
 **•**&nbsp;Personalizar la hoja de dibujo.  
 **•**&nbsp;Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
 
+•&thinsp;Familiarizarse con la interfaz de KiCad.  
+•&thinsp;Personalizar la hoja de dibujo.  
+•&thinsp;Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
+
+
 ## 🧩 Contenidos trabajados
 
 **•**&nbsp;Configuración inicial de proyectos en KiCad.  
