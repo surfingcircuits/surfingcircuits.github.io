@@ -20,7 +20,7 @@ Aquí encontrarás el material del módulo **Sistemas electromecánicos y de flu
 
 | Enlace | Contenido |
 |:------:|:----------|
-| [Unidad&nbsp;01](/flu/UP1_union_y_montaje.md) | Técnicas de unión y montaje. |
+| [Unidad&nbsp;01](/flu/UP1_union_y_montaje/) | Técnicas de unión y montaje. |
 | [Práctica&nbsp;02](/tpmm/tema_2/) | Realización de la práctica nº. 2 |
 
 ---
