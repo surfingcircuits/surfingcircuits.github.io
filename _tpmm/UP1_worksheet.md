@@ -23,37 +23,33 @@ toc_sticky: true
 
 ## 🚀 Objetivos
 
-**•**&nbsp;Familiarizarse con la interfaz de KiCad.  
-**•**&nbsp;Personalizar la hoja de dibujo.  
-**•**&nbsp;Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
-
-•&thinsp;Familiarizarse con la interfaz de KiCad.  
-•&thinsp;Personalizar la hoja de dibujo.  
-•&thinsp;Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
+**•**&thinsp;Familiarizarse con la interfaz de KiCad.  
+**•**&thinsp;Personalizar la hoja de dibujo.  
+**•**&thinsp;Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
 
 
 ## 🧩 Contenidos trabajados
 
-**•**&nbsp;Configuración inicial de proyectos en KiCad.  
-**•**&nbsp;Creación y edición de plantillas de hoja de dibujo.  
-**•**&nbsp;Introducción de datos de identificación en esquemas: título, autor, fecha, versión, logotipo.  
-**•**&nbsp;Guardado de la plantilla para reutilización en futuros proyectos.  
+**•**&thinsp;Configuración inicial de proyectos en KiCad.  
+**•**&thinsp;Creación y edición de plantillas de hoja de dibujo.  
+**•**&thinsp;Introducción de datos de identificación en esquemas: título, autor, fecha, versión, logotipo.  
+**•**&thinsp;Guardado de la plantilla para reutilización en futuros proyectos.  
 
 ## 💻 Materiales y recursos
 
-**•**&nbsp;Software **KiCad (versión 7 o superior)**.  
-**•**&nbsp;Logotipo del centro en formato `.png`.
+**•**&thinsp;Software **KiCad (versión 7 o superior)**.  
+**•**&thinsp;Logotipo del centro en formato `.png`.
 
 ## 🧭 Desarrollo de la práctica
 
 ### Configurar el editor de hoja de trabajo
 
-**1.**&nbsp;Abre **KiCad**.  
-**2.**&nbsp;Abre el **Editor de hoja de trabajo**.  
-**3.**&nbsp;Seleccionar el tamaño de hoja y orientación:  
-&nbsp;&nbsp;**-**&nbsp;Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
-&nbsp;&nbsp;**-**&nbsp;Selecciona: **Tamaño: A4 210x297mm**.  
-&nbsp;&nbsp;**-**&nbsp;Selecciona: **Orientación: Horizontal**.
+**1.**&thinsp;Abre **KiCad**.  
+**2.**&thinsp;Abre el **Editor de hoja de trabajo**.  
+**3.**&thinsp;Seleccionar el tamaño de hoja y orientación:  
+&thinsp;&thinsp;**-**&thinsp;Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
+&thinsp;&thinsp;**-**&thinsp;Selecciona: **Tamaño: A4 210x297mm**.  
+&thinsp;&thinsp;**-**&thinsp;Selecciona: **Orientación: Horizontal**.
 
 ### Personalizar la hoja de trabajo
 
