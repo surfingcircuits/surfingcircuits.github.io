@@ -1,5 +1,5 @@
 ---
-title: "T01 Elementos de unión"
+title: "T01 - Elementos de unión"
 layout: single
 date: 2025-09-16
 excerpt: "Primera unidad del módulo en la que se estudiarán los distintos métodos empleados en la unión y el montaje de elementos mecánicos."
