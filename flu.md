@@ -8,7 +8,7 @@ toc_label: "Módulo FLU"
 toc_icon: "compass"
 toc_sticky: true
 sidebar:
-  nav: tpmm
+  nav: flu
   sticky: true
 ---
 
@@ -21,9 +21,9 @@ Aquí encontrarás el material del módulo **Sistemas electromecánicos y de flu
 
 | Enlace | Contenido |
 |:------:|:----------|
-| [Elementos mecánicos de unión](/flu/UP01_elementos_mecanicos_de_union/) | Tipos de uniones, tornillos, roscas, etc.  |
-| [Práctica&nbsp;02](/tpmm/tema_2/) | Realización de la práctica nº. 2 |
+| [Elementos mecánicos de unión](/flu/UP01_elementos_union/) | Tipos de uniones, tornillos, roscas, etc.  |
 
 ---
 
-## Unidad de Programación - 02
+## Máquinas y mecanismos
+*Unidad de Programación 02*
