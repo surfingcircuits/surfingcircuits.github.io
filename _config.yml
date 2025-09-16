@@ -106,6 +106,9 @@ collections:
   tpmm:
     output: true
     permalink: /tpmm/:path/
+  flu:
+    output: true
+    permalink: /flu/:path/
 
 
 # Site Author
