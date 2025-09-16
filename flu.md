@@ -16,11 +16,12 @@ Aquí encontrarás el material del módulo **Sistemas electromecánicos y de flu
 
 ---
 
-## Unidad de Programación - 01
+## Uniones mecánicas y elementos auxiliares
+*Unidad de Programación 01*
 
 | Enlace | Contenido |
 |:------:|:----------|
-| [Unidad&nbsp;01](/flu/UP1_union_y_montaje/) | Técnicas de unión y montaje. |
+| [Elementos mecánicos de unión](/flu/UP01_elementos_mecanicos_de_union/) | Tipos de uniones, tornillos, roscas, etc.  |
 | [Práctica&nbsp;02](/tpmm/tema_2/) | Realización de la práctica nº. 2 |
 
 ---
