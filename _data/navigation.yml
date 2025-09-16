@@ -35,3 +35,9 @@ tpmm:
     children:
       - title: "Práctica 01"
         url: /tpmm/UP1_worksheet
+# Índice para las publicaciones de FLU
+flu:
+  - title: "Uniones mecánicas y elementos auxiliares"
+    children:
+      - title: "T01 Elementos de unión"
+        url: /flu/UP01_elementos_union
