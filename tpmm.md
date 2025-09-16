@@ -1,6 +1,6 @@
 ---
 title: "TPMM"
-layout: archive
+layout: single
 permalink: /tpmm/
 # Table of contents - shown in right side
 toc: true
