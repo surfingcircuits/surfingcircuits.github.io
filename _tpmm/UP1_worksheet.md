@@ -55,10 +55,10 @@ toc_sticky: true
 
 Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobre la que se dibujará:
 
-**1.**&nbsp;Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.  
-**2.**&nbsp;Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.  
-**3.**&nbsp;Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.  
-**4.**&nbsp;Modifica el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
+**1.**&thinsp;Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.  
+**2.**&thinsp;Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.  
+**3.**&thinsp;Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.  
+**4.**&thinsp;Modifica el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
 
 ![Detalle del cajetín](/assets/tpmm/worksheet_detail.png "Detalle del cajetín")
 
@@ -70,21 +70,21 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 
 Antes de dar por finalizada la plantilla podemos visualizar como quedará una vez rellenemos los campos que hemos preparado:
 
-**1.**&nbsp;Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
-**2.**&nbsp;Rellena todos los campos que has dejado preparados en el cajetín:  
-&nbsp;&nbsp;**-**&nbsp;${TITLE} → El título que tendrá el esquema.  
-&nbsp;&nbsp;**-**&nbsp;${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
-&nbsp;&nbsp;**-**&nbsp;${PAPER} → El tamaño del papel, en nuestro caso A4.  
-&nbsp;&nbsp;**-**&nbsp;${REVISION} → El número de versión en la que se encuentre el diseño.  
-&nbsp;&nbsp;**-**&nbsp;${ISSUE_DATE} → La fecha que indiquemos como entrega.  
-&nbsp;&nbsp;**-**&nbsp;${CURRENT_DATE} → Se refresca automáticamente cada vez que se abre la hoja con la fecha actual.  
-&nbsp;&nbsp;**-**&nbsp;${KICAD_VERSION} → Versión de KiCad utilizada.  
-&nbsp;&nbsp;**-**&nbsp;${SHEETPATH} → Ruta de la hoja actual.  
-&nbsp;&nbsp;**-**&nbsp;${FILENAME} → Nombre del archivo.  
-&nbsp;&nbsp;**-**&nbsp;Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas.  
-&nbsp;&nbsp;**-**&nbsp;${COMMENT1} → Aquí indicaremos el nombre del diseñador.  
-**3.**&nbsp;Guarda la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.  
-**4.**&nbsp;Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
+**1.**&thinsp;Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
+**2.**&thinsp;Rellena todos los campos que has dejado preparados en el cajetín:  
+&thinsp;&thinsp;**-**&thinsp;${TITLE} → El título que tendrá el esquema.  
+&thinsp;&thinsp;**-**&thinsp;${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
+&thinsp;&thinsp;**-**&thinsp;${PAPER} → El tamaño del papel, en nuestro caso A4.  
+&thinsp;&thinsp;**-**&thinsp;${REVISION} → El número de versión en la que se encuentre el diseño.  
+&thinsp;&thinsp;**-**&thinsp;${ISSUE_DATE} → La fecha que indiquemos como entrega.  
+&thinsp;&thinsp;**-**&thinsp;${CURRENT_DATE} → Se refresca automáticamente cada vez que se abre la hoja con la fecha actual.  
+&thinsp;&thinsp;**-**&thinsp;${KICAD_VERSION} → Versión de KiCad utilizada.  
+&thinsp;&thinsp;**-**&thinsp;${SHEETPATH} → Ruta de la hoja actual.  
+&thinsp;&thinsp;**-**&thinsp;${FILENAME} → Nombre del archivo.  
+&thinsp;&thinsp;**-**&thinsp;Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas.  
+&thinsp;&thinsp;**-**&thinsp;${COMMENT1} → Aquí indicaremos el nombre del diseñador.  
+**3.**&thinsp;Guarda la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.  
+**4.**&thinsp;Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
 
 ## ✅ Criterios de evaluación
 
