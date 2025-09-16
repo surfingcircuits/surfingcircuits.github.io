@@ -12,6 +12,20 @@ toc_sticky: true
 
 **UP01 - Uniones mecánicas y elementos auxiliares**
 
+## Tipos de uniones
+
+Todas las máquinas están formadas por piezas y mecanismos unidos entre só mediante distintos elementos o sistemas de unión. El modo de fijación de estas piezas o elementos depende de su función y requiere el uso de diferentes procedimientos.
+
+Los procedimientos de unión de piezas se clasifican en dos grandes bloques: uniones desmontables y uniones fijas o no desmontables.
+
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 >ℹ️ **Empieza aquí:**
 >
 > El diseño de esquemas electrónicos no solo consiste en representar circuitos, sino también en documentarlos de manera clara y profesional. Una hoja de trabajo personalizada permite mostrar la información esencial de cada proyecto en todas y cada una de las hojas que lo compongan.  
