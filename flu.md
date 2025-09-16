@@ -20,7 +20,7 @@ Aquí encontrarás el material del módulo **Sistemas electromecánicos y de flu
 
 | Enlace | Contenido |
 |:------:|:----------|
-| [Práctica&nbsp;01](/tpmm/UP1_worksheet/) | Creación de una hoja de trabajo personalizada para utilizar como plantilla. |
+| [Unidad&nbsp;01](/flu/UP1_union_y_montaje.md) | Técnicas de unión y montaje. |
 | [Práctica&nbsp;02](/tpmm/tema_2/) | Realización de la práctica nº. 2 |
 
 ---
