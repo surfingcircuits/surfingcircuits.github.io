@@ -10,7 +10,7 @@ toc_icon: "list"
 toc_sticky: true
 ---
 
-**Práctica 01**
+**UP01 - Introducción al software KiCad**
 
 >ℹ️ **Empieza aquí:**
 >
