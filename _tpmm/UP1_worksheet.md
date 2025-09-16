@@ -23,41 +23,41 @@ toc_sticky: true
 
 ## 🚀 Objetivos
 
-**•** Familiarizarse con la interfaz de KiCad.  
-**•** Personalizar la hoja de dibujo.  
-**•** Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
+**•**&nbsp;Familiarizarse con la interfaz de KiCad.  
+**•**&nbsp;Personalizar la hoja de dibujo.  
+**•**&nbsp;Comprender la importancia de la documentación técnica y la normalización en proyectos electrónicos.
 
 ## 🧩 Contenidos trabajados
 
-**•** Configuración inicial de proyectos en KiCad.  
-**•** Creación y edición de plantillas de hoja de dibujo.  
-**•** Introducción de datos de identificación en esquemas: título, autor, fecha, versión, logotipo.  
-**•** Guardado de la plantilla para reutilización en futuros proyectos.  
+**•**&nbsp;Configuración inicial de proyectos en KiCad.  
+**•**&nbsp;Creación y edición de plantillas de hoja de dibujo.  
+**•**&nbsp;Introducción de datos de identificación en esquemas: título, autor, fecha, versión, logotipo.  
+**•**&nbsp;Guardado de la plantilla para reutilización en futuros proyectos.  
 
 ## 💻 Materiales y recursos
 
-**•** Software **KiCad (versión 7 o superior)**.  
-**•** Logotipo del centro en formato `.png`.
+**•**&nbsp;Software **KiCad (versión 7 o superior)**.  
+**•**&nbsp;Logotipo del centro en formato `.png`.
 
 ## 🧭 Desarrollo de la práctica
 
 ### Configurar el editor de hoja de trabajo
 
-**1.** Abre **KiCad**.  
-**2.** Abre el **Editor de hoja de trabajo**.  
-**3.** Seleccionar el tamaño de hoja y orientación:  
-**-** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
-**-** Selecciona: **Tamaño: A4 210x297mm**.  
-**-** Selecciona: **Orientación: Horizontal**.
+**1.**&nbsp;Abre **KiCad**.  
+**2.**&nbsp;Abre el **Editor de hoja de trabajo**.  
+**3.**&nbsp;Seleccionar el tamaño de hoja y orientación:  
+&nbsp;&nbsp;**-**&nbsp;Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
+&nbsp;&nbsp;**-**&nbsp;Selecciona: **Tamaño: A4 210x297mm**.  
+&nbsp;&nbsp;**-**&nbsp;Selecciona: **Orientación: Horizontal**.
 
 ### Personalizar la hoja de trabajo
 
 Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobre la que se dibujará:
 
-**1.** Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.  
-**2.** Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.  
-**3.** Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.  
-**4.** Modifica el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
+**1.**&nbsp;Activa la cuadrícula pulsando el botón **Mostrar cuadrícula**.  
+**2.**&nbsp;Utiliza la unidad de medida **Milímetros** pulsando su botón correspondiente.  
+**3.**&nbsp;Haciendo click derecho sobre cualquier parte de la hoja de trabajo disminuye el tamaño de la cuadrícula sobre la que trabajarás. Por ejemplo **click derecho → Cuadrícula → 0,5000 mm**.  
+**4.**&nbsp;Modifica el cajetín de la hoja de trabajo para conseguir un resultado similar al presentado en la siguiente imagen. 
 
 ![Detalle del cajetín](/assets/tpmm/worksheet_detail.png "Detalle del cajetín")
 
@@ -69,21 +69,21 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 
 Antes de dar por finalizada la plantilla podemos visualizar como quedará una vez rellenemos los campos que hemos preparado:
 
-**1.** Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
-**2.** Rellena todos los campos que has dejado preparados en el cajetín:  
-**-** ${TITLE} → El título que tendrá el esquema.  
-**-** ${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
-**-** ${PAPER} → El tamaño del papel, en nuestro caso A4.  
-**-** ${REVISION} → El número de versión en la que se encuentre el diseño.  
-**-** %{ISSUE_DATE} → La fecha que indiquemos como entrega.  
-**-** ${CURRENT_DATE} → Se refresca automáticamente cada vez que se abre la hoja con la fecha actual.  
-**-** ${KICAD_VERSION} → Versión de KiCad utilizada.  
-**-** ${SHEETPATH} → Ruta de la hoja actual.  
-**-** ${FILENAME} → Nombre del archivo.  
-**-** Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas.  
-**-** ${COMMENT1} → Aquí indicaremos el nombre del diseñador.  
-**3.** Guarda la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.  
-**4.** Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
+**1.**&nbsp;Abre el menú **Ver** y haz click en **Configuración de previsualización de página**.  
+**2.**&nbsp;Rellena todos los campos que has dejado preparados en el cajetín:  
+&nbsp;&nbsp;**-**&nbsp;${TITLE} → El título que tendrá el esquema.  
+&nbsp;&nbsp;**-**&nbsp;${COMPANY} → Aquí aparecerá el nombre de la empresa, en nuestro caso, "IES Laurona".  
+&nbsp;&nbsp;**-**&nbsp;${PAPER} → El tamaño del papel, en nuestro caso A4.  
+&nbsp;&nbsp;**-**&nbsp;${REVISION} → El número de versión en la que se encuentre el diseño.  
+&nbsp;&nbsp;**-**&nbsp;${ISSUE_DATE} → La fecha que indiquemos como entrega.  
+&nbsp;&nbsp;**-**&nbsp;${CURRENT_DATE} → Se refresca automáticamente cada vez que se abre la hoja con la fecha actual.  
+&nbsp;&nbsp;**-**&nbsp;${KICAD_VERSION} → Versión de KiCad utilizada.  
+&nbsp;&nbsp;**-**&nbsp;${SHEETPATH} → Ruta de la hoja actual.  
+&nbsp;&nbsp;**-**&nbsp;${FILENAME} → Nombre del archivo.  
+&nbsp;&nbsp;**-**&nbsp;Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas.  
+&nbsp;&nbsp;**-**&nbsp;${COMMENT1} → Aquí indicaremos el nombre del diseñador.  
+**3.**&nbsp;Guarda la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.  
+**4.**&nbsp;Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
 
 ## ✅ Criterios de evaluación
 
