@@ -20,7 +20,8 @@ Aquí encontrarás el material del módulo **Técnicas y procesos de montaje y m
 
 | Enlace | Contenido |
 |:------:|:----------|
-| [Práctica&nbsp;01](/tpmm/UP1_worksheet/) | Creación de una hoja de trabajo personalizada para utilizar como plantilla. |
+| [Práctica&nbsp;01](/tpmm/UP01_worksheet/) | Creación de una hoja de trabajo personalizada para utilizar como plantilla. |
+| [Práctica&nbsp;02](/tpmm/UP01_component_symbols/) | Inserción de símbolos electrónicos. |
 | [Práctica&nbsp;02](/tpmm/tema_2/) | Realización de la práctica nº. 2 |
 
 ---
