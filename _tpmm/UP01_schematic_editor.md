@@ -1,8 +1,8 @@
 ---
-title: "P02 - Trabajar con el editor de esquemas"
+title: "P02 - Funciones del editor de esquemas"
 layout: single
 date: 2025-09-18
-excerpt: "Maquetar una hoja de trabajo en KiCad introduciendo símbolos, imágenes de componentes reales y notas explicativas."
+excerpt: "Maquetar una hoja de trabajo en KiCad introduciendo símbolos, imágenes de componentes reales, notas explicativas, hipervínculos y creación de hojas jerárquicas."
 # Table of contents - shown in right side
 toc: true
 toc_label: "Índice"
