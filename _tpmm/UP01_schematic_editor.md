@@ -1,5 +1,5 @@
 ---
-title: "P02 - Inserción de símbolos electrónicos"
+title: "P02 - Trabajar con el editor de esquemas"
 layout: single
 date: 2025-09-18
 excerpt: "Maquetar una hoja de trabajo en KiCad introduciendo símbolos, imágenes de componentes reales y notas explicativas."
