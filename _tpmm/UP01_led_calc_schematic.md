@@ -1,7 +1,7 @@
 ---
 title: "P03 - Diseño jerárquico de un esquema con LEDs"
 layout: single
-date: 2025-09-29
+date: 2025-09-22
 excerpt: "Diseño de un esquema electrónico jerárquico en KiCad con LEDs de distintos colores, cálculo de sus resistencias y uso de etiquetas."
 # Table of contents - shown in right side
 toc: true
