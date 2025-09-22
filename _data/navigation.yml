@@ -38,7 +38,7 @@ tpmm:
       - title: "Práctica 02"
         url: /tpmm/UP01_schematic_editor
       - title: "Práctica 03"
-        url: /tpmm/UP01_LED_calc_schematic
+        url: /tpmm/UP01_led_calc_schematic
 # Índice para las publicaciones de FLU
 flu:
   - title: "Uniones mecánicas y elementos auxiliares"
