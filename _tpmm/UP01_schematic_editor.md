@@ -10,6 +10,8 @@ toc_icon: "list"
 toc_sticky: true
 ---
 
+**UP01 - Introducción a KiCad**
+
 >ℹ️ **Empieza aquí:**
 >
 > Los símbolos electrónicos representan de forma estandarizada los distintos componentes que forman parte de un circuito.  
