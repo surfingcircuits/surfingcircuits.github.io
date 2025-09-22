@@ -10,6 +10,8 @@ toc_icon: "list"
 toc_sticky: true
 ---
 
+**UP01 - Introducción a KiCad**
+
 >ℹ️ **Empieza aquí:**  
 >  
 > En esta práctica diseñarás tu primer esquema electrónico funcional organizado de forma jerárquica en KiCad.  
@@ -42,7 +44,7 @@ toc_sticky: true
 
 ## 🧭 Desarrollo de la práctica
 
-### 1. Crear la jerarquía
+### 1. Creación de las hojas jerárquicas
 
 **1.**&thinsp;Crea un nuevo proyecto llamado `P03_LEDs_ApellidoNombre`.  
 **2.**&thinsp;En la hoja principal, crea dos subhojas jerárquicas:  
@@ -51,33 +53,33 @@ toc_sticky: true
 
 ### 2. Subhoja `Alimentaciones`
 
-**1.**&thinsp;Inserta un **conector de pines de 4 vías** para las tensiones externas (3V3, 5V, 12V y GND).  
-**2.**&thinsp;Asigna etiquetas jerárquicas de salida a cada pin.  
-**3.**&thinsp;Documenta con un texto la función de este conector: “Entrada de tensiones para LEDs”.  
+**1.**&thinsp;Inserta los conectores para las tensiones externas (3V3, 5V, 12V y GND).  
+**2.**&thinsp;Asigna las etiquetas jerárquicas correspondientes.  
+**3.**&thinsp;Documenta con un texto la función de este conector: “Entrada de tensión de 5V para LEDs”.  
 
 >💡 **Recuerda:**  
-> Al trabajar con jerarquía, debes conectar los pines de salida en esta hoja a pines de entrada en la hoja principal, y de ahí al bloque `Iluminación_LED`.  
+> Al trabajar con hojas jerárquicas, debes conectar los pines de salida de esta hoja a los pines de entrada correspondientes.  
 {: .notice--info}
 
 ### 3. Subhoja `Iluminación_LED`
 
-**1.**&thinsp;Inserta al menos **3 LEDs de colores distintos** (rojo, verde, azul).  
-**2.**&thinsp;Conecta cada LED a su alimentación correspondiente (3V3, 5V, 12V) con una resistencia en serie.  
-**3.**&thinsp;Coloca una **nota de texto junto a cada resistencia** explicando el cálculo realizado:  
-&nbsp;&nbsp;Ejemplo: `R = (5 – 2) / 0.02 = 150 Ω`.  
-**4.**&thinsp;Añade un **condensador de desacoplo de 100nF** entre 5V y GND, próximo al nodo de alimentación.  
+**1.**&thinsp;Inserta al menos tres grupos de dos LEDs de distinto color.  
+**2.**&thinsp;Conecta cada LED a su alimentación correspondiente (3V3, 5V, 12V) junto con una resistencia en serie.  
+**3.**&thinsp;Coloca una nota de texto junto a cada grupo de LEDs explicando el cálculo realizado:  
+&nbsp;&nbsp;Ejemplo: `R = (5V – 2V) / 0.02A = 150Ω`.  
+**4.**&thinsp;Añade un condensador de desacoplo de 100nF entre 5V y GND, próximo al nodo de alimentación.  
 
 >⚠️ **Importante:**  
-> Los cálculos deben estar claramente visibles en el esquema, no solo en un documento aparte.  
-> Esto entrena la documentación técnica en el propio diseño.  
+> En este ejemplo, los cálculos deben estar claramente visibles en el esquema para mantener toda la documentación en un solo lugar.  
+> Esto te permite aprender a generar la documentación técnica necesaria en el propio diseño de la hoja del esquema.  
 {: .notice--warning}
 
 ### 4. Finalización del esquema
 
 **1.**&thinsp;Anota automáticamente todos los componentes (R1, D1, C1, etc.).  
-**2.**&thinsp;Ejecuta el **ERC** y corrige las advertencias o errores detectados.  
+**2.**&thinsp;Ejecuta el ERC y corrige las advertencias o errores detectados. En el caso de que no haya errores, fuerza la aparición de al menos dos de ellos. Realiza una captura de pantalla donde se vea el ERC y el error en pantalla.  
 **3.**&thinsp;Guarda el proyecto con todas las modificaciones realizadas.  
-**4.**&thinsp;Entrega el archivo del proyecto junto con una captura de pantalla de la hoja principal y de las subhojas.  
+**4.**&thinsp;Entrega el archivo la carpeta de proyecto comprimida en `.zip` junto con una impresión PDF a color de todas las hojas que forman el esquema y las capturas de pantalla de los errores detectados con el ERC.  
 
 ## ✅ Criterios de evaluación
 
