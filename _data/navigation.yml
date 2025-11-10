@@ -31,14 +31,14 @@ main:
 
 # Índice para las publicaciones de TPMM
 tpmm:
-  - title: "Unidad 1"
+  - title: "UP1: Introducción a Kicad"
     children:
-      - title: "Práctica 01"
-        url: /tpmm/UP01_worksheet
+      - title: "P01: Diseño de una hoja de trabajo"
+        url: /tpmm/UP1_worksheet
       - title: "Práctica 02"
-        url: /tpmm/UP01_schematic_editor
+        url: /tpmm/UP1_schematic_editor
       - title: "Práctica 03"
-        url: /tpmm/UP01_led_calc_schematic
+        url: /tpmm/UP1_led_calc_schematic
 # Índice para las publicaciones de FLU
 flu:
   - title: "Uniones mecánicas y elementos auxiliares"
