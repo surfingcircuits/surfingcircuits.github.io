@@ -13,8 +13,8 @@ sidebar:
 ---
 
 Aquí encontrarás el material del módulo:
-<div align="center"><b>«Técnicas y procesos de montaje y mantenimiento de equipos electrónicos»</b></div>
-impartido en el IES Laurona (Llíria) por mí.
+<span style="display: block; text-align: center;">«Técnicas y procesos de montaje y mantenimiento de equipos electrónicos»</span>
+impartido en el IES Laurona (Llíria) por Eduardo Alonso.
 ---
 
 <small><b>Unidad de Programación 1</b></small>
