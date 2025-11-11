@@ -35,13 +35,23 @@ tpmm:
     children:
       - title: "P01: Diseño de una hoja de trabajo"
         url: /tpmm/UP1_worksheet
-      - title: "Práctica 02"
+      - title: "P02: Funciones del editor de esquemas"
         url: /tpmm/UP1_schematic_editor
-      - title: "Práctica 03"
+      - title: "P03: Diseño jerárquico de un esquema con LEDs"
         url: /tpmm/UP1_led_calc_schematic
+  - title: "UP2: Fuente de alimentación lineal"
+  - title: "UP3: Personalizando y amplicando Kicad"
+  - title: "UP4: Control PWM de un motor DC"
+  - title: "UP5: Profundización en el uso de Kicad"
+  - title: "UP6: Shield SMD para Arduino UNO"
+  - title: "UP7: Shield de control para el TPMMbot"
 # Índice para las publicaciones de FLU
 flu:
-  - title: "Uniones mecánicas y elementos auxiliares"
+  - title: "UP1: Elementos mecánicos y técnicas de unión"
     children:
       - title: "T01 Elementos de unión"
         url: /flu/UP01_elementos_union
+  - title: "UP2: Mecanismos y transmisión de movimiento"
+  - title: "UP3: Control y automatización con Arduino"
+  - title: "UP4: Neumática y electroneumática aplicadas"
+  - title: "UP5: Hidráulica y electrohidráulica básicas"
