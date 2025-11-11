@@ -12,12 +12,12 @@ sidebar:
   sticky: true
 ---
 
-Aquí encontrarás el material del módulo:
-<span style="display: block; text-align: center;">«Técnicas y procesos de montaje y mantenimiento de equipos electrónicos»</span>
-impartido en el IES Laurona (Llíria) por Eduardo Alonso.
+<span style="display: block; text-align: center;"><b>«Técnicas y procesos de montaje y mantenimiento de equipos electrónicos»</b></span>
+Aquí encontrarás el material necesario para seguir este módulo impartido en el IES Laurona (Llíria) por Eduardo Alonso.
+
 ---
 
-<small><b>Unidad de Programación 1</b></small>
+<span style="font-size: smaller; font-weight: bold; display: inline;">Unidad de Programación 1</span>
 ## Introducción a Kicad
 
 | Enlace | Título | Contenido |
@@ -28,5 +28,5 @@ impartido en el IES Laurona (Llíria) por Eduardo Alonso.
 
 ---
 
-## Unidad de Programación - 02
-
+<span style="font-size: smaller; font-weight: bold; display: inline;">Unidad de Programación 2</span>
+## Fuente de alimentación lineal
