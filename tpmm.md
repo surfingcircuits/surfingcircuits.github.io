@@ -17,8 +17,8 @@ Aquí encontrarás el material necesario para seguir este módulo impartido en e
 
 ---
 
-<div style="font-size: smaller; font-weight: bold;">Unidad de Programación 1</div>
 ## Introducción a Kicad
+<div style="font-size: smaller; font-weight: bold;">Unidad de Programación 1</div>
 
 | Enlace | Título | Contenido |
 |:------:|:-------|:----------|
@@ -28,5 +28,5 @@ Aquí encontrarás el material necesario para seguir este módulo impartido en e
 
 ---
 
-<div style="font-size: smaller; font-weight: bold;">Unidad de Programación 2</div>
 ## Fuente de alimentación lineal
+<div style="font-size: smaller; font-weight: bold;">Unidad de Programación 2</div>
