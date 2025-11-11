@@ -12,8 +12,9 @@ sidebar:
   sticky: true
 ---
 
-Aquí encontrarás el material del módulo **Técnicas y procesos de montaje y mantenimiento de equipos electrónicos** impartido en el IES Laurona (Llíria).
-
+Aquí encontrarás el material del módulo:
+<div align="center"><b>«Técnicas y procesos de montaje y mantenimiento de equipos electrónicos»</b></div>
+impartido en el IES Laurona (Llíria) por mí.
 ---
 
 <small><b>Unidad de Programación 1</b></small>
