@@ -17,8 +17,7 @@ Aquí encontrarás el material necesario para seguir este módulo impartido en e
 
 ---
 
-## Introducción a Kicad
-<div style="font-size: smaller; font-weight: bold;">Unidad de Programación 1</div>
+## UP1: Introducción a Kicad
 
 | Enlace | Título | Contenido |
 |:------:|:-------|:----------|
@@ -28,5 +27,9 @@ Aquí encontrarás el material necesario para seguir este módulo impartido en e
 
 ---
 
-## Fuente de alimentación lineal
-<div style="font-size: smaller; font-weight: bold;">Unidad de Programación 2</div>
+## UP2: Fuente de alimentación lineal
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+
+---
