@@ -16,11 +16,8 @@ Aquí encontrarás el material del módulo **Técnicas y procesos de montaje y m
 
 ---
 
-# Introducción a Kicad
-
+<small><b>Unidad de Programación 1</b></small>
 ## Introducción a Kicad
-
-**Unidad de Programación - 01**
 
 | Enlace | Título | Contenido |
 |:------:|:-------|:----------|
