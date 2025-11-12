@@ -4,7 +4,7 @@ layout: single
 permalink: /tpmm/
 # Table of contents - shown in right side
 toc: true
-toc_label: "Módulo TPMM"
+toc_label: "Unidades:"
 toc_icon: "compass"
 toc_sticky: true
 sidebar:
