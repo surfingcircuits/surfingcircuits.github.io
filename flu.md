@@ -12,18 +12,47 @@ sidebar:
   sticky: true
 ---
 
-Aquí encontrarás el material del módulo **Sistemas electromecánicos y de fluidos** impartido en el IES Laurona (Llíria).
+<span style="display: block; text-align: center;"><b>«Sistemas electromecánicos y de fluidos»</b></span>
+En este espacio encontrarás los recursos que necesitas para seguir el módulo que imparto en el IES Laurona (Llíria).
 
 ---
 
-## Uniones mecánicas y elementos auxiliares
-*Unidad de Programación 01*
+## UP1: Elementos mecánicos y técnicas de unión
 
-| Enlace | Contenido |
-|:------:|:----------|
-| [Elementos mecánicos de unión](/flu/UP01_elementos_union/) | Tipos de uniones, tornillos, roscas, etc.  |
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| [Elementos mecánicos de unión](/flu/UP01_elementos_union/) | Elementos mecánicos | Tipos de uniones, tornillos, roscas, etc.  |
 
 ---
 
-## Máquinas y mecanismos
-*Unidad de Programación 02*
+## UP2: Mecanismos y transmisión de movimiento
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
+
+## UP3: Control y automatización con Arduino
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
+
+## UP4: Neumática y electroneumática aplicadas
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
+
+## UP5: Hidráulica y electrohidráulica básicas
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
