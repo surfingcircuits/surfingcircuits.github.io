@@ -13,7 +13,7 @@ sidebar:
 ---
 
 <span style="display: block; text-align: center;"><b>«Técnicas y procesos de montaje y mantenimiento de equipos electrónicos»</b></span>
-Aquí encontrarás el material necesario para seguir este módulo impartido en el IES Laurona (Llíria) por Eduardo Alonso.
+En este espacio encontrarás los recursos que necesitas para seguir el módulo que imparto en el IES Laurona (Llíria).
 
 ---
 
@@ -31,6 +31,46 @@ Aquí encontrarás el material necesario para seguir este módulo impartido en e
 
 | Enlace | Título | Contenido |
 |:------:|:-------|:----------|
-| Hola | Hola | Hola |
+| Enlaces | Títulos | Contenidos |
+
+---
+
+## UP3: Personalizando y amplicando Kicad
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
+
+## UP4: Control PWM de un motor DC
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
+
+## UP5: Profundización en el uso de Kicad
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
+
+## UP6: Shield SMD para Arduino UNO
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
+
+## UP7: Shield de control para el TPMMbot
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
 
 ---
