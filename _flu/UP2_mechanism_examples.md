@@ -70,7 +70,7 @@ $\text{pasos/s} = \text{rps} \cdot \text{pasos/rev} = 0,318 \cdot 200 \approx 63
 
 Debido a que el motor debe girar un número entero de pasos, deberá escogerse la cifra inmediatamente superior para garantizar que la cinta se haya desplazado lo suficiente.
 
-**La velocidad de giro del motor para que solo haya una caja sobre la cinta a la vez debe ser de**:
+***La velocidad de giro del motor para que solo haya una caja sobre la cinta a la vez debe ser de***:
 
 $\boxed{\text{Velocidad del motor} = 64\ \text{pasos/s}}$
 
