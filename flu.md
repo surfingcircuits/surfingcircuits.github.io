@@ -4,7 +4,7 @@ layout: single
 permalink: /flu/
 # Table of contents - shown in right side
 toc: true
-toc_label: "Módulo FLU"
+toc_label: "Unidades:"
 toc_icon: "compass"
 toc_sticky: true
 sidebar:
