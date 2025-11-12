@@ -44,30 +44,36 @@ toc_sticky: true
 
 **PR01.a)**
 
-#### Paso 1: Avance de la cinta por revolución del rodillo
+Paso 1: Calcular el avance de la cinta por cada revolución del rodillo. El perímetro del rodillo determina cuánto avanza la cinta en una revolución completa:
 
-La circunferencia del rodillo determina cuánto avanza la cinta en **una revolución completa**:
+$P = \pi \cdot D = \pi \cdot 10 \approx 31,416 \text{cm/rev}$
 
-$C = \pi \cdot D$
+Por cada vuelta completa del rodillo la cinta se desplazará **31,42 cm**.
 
-$$C = \pi \cdot 10 \approx 31,42\ \text{cm/rev}$$
+**Paso 2**: Calcular la velocidad lineal a la que debe desplazarse la cinta para que haya una sola caja sobre ella. La velocidad de avance debe ser:
 
-Cada vuelta del rodillo desplaza la cinta **31,42 cm**.
+$v = \frac{l}{t} = \frac{200\ \text{cm}}{20\ \text{s}} = 10\ \text{cm/s}$
 
----
+**Paso 3**: Revoluciones por segundo del rodillo
 
-##### Paso 2: Velocidad lineal necesaria de la cinta
+Cada revolución mueve la cinta \(C\) cm, así que el número de revoluciones por segundo es:
 
-Para que haya una sola caja en la cinta, la velocidad de avance debe ser:
+$\text{rps} = \frac{v}{C}$
 
-\[
-v = \frac{L}{t}
-\]
+$\text{rps} = \frac{10}{31,42} \approx 0,318\ \text{rev/s}$
 
-\[
-v = \frac{200\ \text{cm}}{20\ \text{s}} = 10\ \text{cm/s}
-\]
+## Paso 4: Pasos del motor por segundo
 
----
+El motor da un paso cada \(\alpha = 1,8^\circ\), por lo que cada revolución completa requiere:
 
+$\text{pasos/rev} = \frac{360^\circ}{\alpha} = \frac{360}{1,8} = 200\ \text{pasos/rev}$
 
+Por lo tanto, los pasos por segundo del motor son:
+
+$\text{pasos/s} = \text{rps} \cdot \text{pasos/rev} = 0,318 \cdot 200 \approx 63,6$
+
+## ✅ Resultado final
+
+$\boxed{\text{Velocidad del motor} \approx 64\ \text{pasos/s}}$
+
+Esta es la velocidad que asegura que **solo haya una caja sobre la cinta a la vez**.
