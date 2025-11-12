@@ -40,11 +40,9 @@ toc_sticky: true
 | Ángulo por paso del motor                     | α                 | 1,8 º      |
 | Distancia de seguridad mínima entre cajas     | d<sub>mín</sub>   | 10 cm      |
 
-### Resolución del PR01
+### Resolución del PR01.a
 
-**PR01.a)**
-
-Paso 1: Calcular el avance de la cinta por cada revolución del rodillo. El perímetro del rodillo determina cuánto avanza la cinta en una revolución completa:
+**Paso 1**: Calcular el avance de la cinta por cada revolución del rodillo. El perímetro del rodillo determina cuánto avanza la cinta en una revolución completa:
 
 $P = \pi \cdot D = \pi \cdot 10 \approx 31,416 \text{cm/rev}$
 
@@ -54,26 +52,26 @@ Por cada vuelta completa del rodillo la cinta se desplazará **31,42 cm**.
 
 $v = \frac{l}{t} = \frac{200\ \text{cm}}{20\ \text{s}} = 10\ \text{cm/s}$
 
-**Paso 3**: Revoluciones por segundo del rodillo
+**Paso 3**: Calcular las revoluciones por segundo del rodillo teniendo en cuenta que cada revolución mueve la cinta \(P\) cm, así que el número de revoluciones por segundo es:
 
-Cada revolución mueve la cinta \(C\) cm, así que el número de revoluciones por segundo es:
+$\text{rps} = \frac{v}{C} = \frac{10}{31,416} \approx 0,318\ \text{rev/s}$
 
-$\text{rps} = \frac{v}{C}$
+**Paso 4**: Obtener el número de pasos por segundo necesarios, calculando para ello primero el número de pasos necesarios para que el motor complete una vuelta.
 
-$\text{rps} = \frac{10}{31,42} \approx 0,318\ \text{rev/s}$
-
-## Paso 4: Pasos del motor por segundo
-
-El motor da un paso cada \(\alpha = 1,8^\circ\), por lo que cada revolución completa requiere:
+El motor gira un ángulo de \(\alpha = 1,8^\circ\) por cada paso, por lo que cada revolución completa requiere:
 
 $\text{pasos/rev} = \frac{360^\circ}{\alpha} = \frac{360}{1,8} = 200\ \text{pasos/rev}$
 
-Por lo tanto, los pasos por segundo del motor son:
+Por lo tanto, los pasos por segundo del motor necesarios son:
 
 $\text{pasos/s} = \text{rps} \cdot \text{pasos/rev} = 0,318 \cdot 200 \approx 63,6$
 
-## ✅ Resultado final
+**Resultado**:
 
-$\boxed{\text{Velocidad del motor} \approx 64\ \text{pasos/s}}$
+Debido a que el motor debe girar un número entero de pasos, deberá escogerse la cifra inmediatamente superior para garantizar que la cinta se haya desplazado lo suficiente.
 
-Esta es la velocidad que asegura que **solo haya una caja sobre la cinta a la vez**.
+**La velocidad de giro del motor para que solo haya una caja sobre la cinta a la vez debe ser de**:
+
+$\boxed{\text{Velocidad del motor} = 64\ \text{pasos/s}}$
+
+### Resolución del PR01.b
