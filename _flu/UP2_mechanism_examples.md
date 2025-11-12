@@ -23,11 +23,11 @@ toc_sticky: true
 
 ![Cinta transportadora con cajas](/assets/flu/cinta_cajas.png "Detalle de la cinta transportadora del PR01.")
 
-**PR01** En una cinta transportadora de 2 metros de longitud, como la de la imagen, se coloca una nueva caja cada 20 segundos y la cinta se encarga de desplazarlas hacia la rampa. Las cajas tienen una anchura de 40 centímetros. Los rodillos que desplazan la cinta transportadora tienen un diámetro de 10 centímetros. El motor que mueve la cinta es un motor paso a paso, con un ángulo de giro por paso de 1,8º.
+**PR01)** En una cinta transportadora de 2 metros de longitud, como la de la imagen, se coloca una nueva caja cada 20 segundos y la cinta se encarga de desplazarlas hacia la rampa. Las cajas tienen una anchura de 40 centímetros. Los rodillos que desplazan la cinta transportadora tienen un diámetro de 10 centímetros. El motor que mueve la cinta es un motor paso a paso, con un ángulo de giro por paso de 1,8º.
 
 **PR01.a)** Calcula la velocidad de giro del motor, en nº de pasos por segundo, para que haya una única caja a la vez sobre la cinta transportadora.
 
-**PR01.b)** Las cajas caen por una rampa al final de la cinta donde un operario las recoge y las apila en un palé. Cuando el palé se llena, el operario debe esperar a que una carretilla lo recoja y traiga uno vacío. Calcula el tiempo en el que se deberá traer el nuevo palé antes de que la cinta transportadora se llene de cajas por completo. *Las cajas son depositadas sobre la cinta mediante un alimentador automatizado, por lo que debes considerar una distancia de seguridad mínima de 10 centímetros entre caja y caja.*
+**PR01.b)** Las cajas caen por una rampa al final de la cinta donde un operario las recoge y las apila en un palé. Cuando el palé se llena, el operario debe esperar a que una carretilla lo recoja y traiga uno vacío. Calcula el tiempo en el que se deberá traer el nuevo palé antes de que la cinta transportadora se llene de cajas por completo. *(Las cajas son depositadas sobre la cinta mediante un alimentador automatizado, por lo que debes considerar una distancia de seguridad mínima de 10 centímetros entre caja y caja.)*
 
 **Recopilación de datos del problema:**
 
@@ -43,5 +43,31 @@ toc_sticky: true
 ### Resolución del PR01
 
 **PR01.a)**
+
+#### Paso 1: Avance de la cinta por revolución del rodillo
+
+La circunferencia del rodillo determina cuánto avanza la cinta en **una revolución completa**:
+
+$C = \pi \cdot D$
+
+$$C = \pi \cdot 10 \approx 31,42\ \text{cm/rev}$$
+
+Cada vuelta del rodillo desplaza la cinta **31,42 cm**.
+
+---
+
+##### Paso 2: Velocidad lineal necesaria de la cinta
+
+Para que haya una sola caja en la cinta, la velocidad de avance debe ser:
+
+\[
+v = \frac{L}{t}
+\]
+
+\[
+v = \frac{200\ \text{cm}}{20\ \text{s}} = 10\ \text{cm/s}
+\]
+
+---
 
 
