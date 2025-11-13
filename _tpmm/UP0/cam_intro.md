@@ -21,9 +21,6 @@ toc_sticky: true
 > El objetivo es comprender la función y la estructura de los archivos en el proceso de fabricación.
 {: .notice--info}
 
-
----
-
 ## ⚡ Notas importantes sobre compatibilidad
 
 >⚠️ **Atención:**  
@@ -32,69 +29,66 @@ toc_sticky: true
 > Se recomienda siempre verificar los archivos exportados antes de comenzar su procesado como paso previo a enviarlos a la máquina CNC.
 {: .notice--warning}
 
----
-
-# Fundamentos teóricos
+## Fundamentos teóricos
 
 Antes de preparar archivos para la fabricación de PCBs, es importante entender algunos conceptos clave que forman la base del flujo de trabajo electrónico hacia el entorno CAM/CNC.
 
 >ℹ️ **Qué es CAM:**  
 > CAM (*Computer-Aided Manufacturing*) es el uso de software que traduce un diseño digital en instrucciones de mecanizado y taladrado para máquinas CNC (como fresadoras o tornos).  
 > Permite controlar trayectorias, velocidades, secuencias de mecanizado y asegurar la precisión del resultado final.
+{: .notice--info}
 
 >ℹ️ **Qué es CNC:**  
 > CNC (*Computer Numerical Control*) se refiere a máquinas controladas por ordenador que ejecutan instrucciones numéricas para realizar tareas como fresado, taladrado, corte o perforación con alta precisión.  
 > Las instrucciones a seguir por la máquina se basan en los archivos, Gerber y Excellon, generados por el software CAM.
+{: .notice--info}
 
----
-
-## Archivos Gerber
+### Archivos Gerber
 
 El formato Gerber es el estándar industrial para describir las capas físicas de una PCB.  
 Incluye información sobre:
 
-- Capas de cobre (**Top Copper**, **Bottom Copper**)  
-- Máscara de soldadura (**Solder Mask**)  
-- Serigrafía o impresiones de referencia (**Silkscreen**)  
-- Capas mecánicas o de contorno (**Mechanical, Edge Cuts**)  
-- Capas de pasta para soldadura (**Paste Layer**)  
+**•**&thinsp;Capas de cobre (**Top Copper**, **Bottom Copper**)  
+**•**&thinsp;Máscara de soldadura (**Solder Mask**)  
+**•**&thinsp;Serigrafía o impresiones de referencia (**Silkscreen**)  
+**•**&thinsp;Capas mecánicas o de contorno (**Mechanical, Edge Cuts**)  
+**•**&thinsp;Capas de pasta para soldadura (**Paste Layer**)  
 
->ℹ️ **Nota:**  
-> Los archivos Gerber **no contienen información eléctrica ni de conexionado**, solo datos gráficos que indican dónde debe eliminarse material (fabricación sustractiva) o añadirse material (fabricación aditiva).  
+>**Nota:**  
+> Los archivos Gerber **no contienen información eléctrica ni de conexionado**, solo datos gráficos que indican dónde debe eliminarse material (fabricación sustractiva) o añadirse material (fabricación aditiva).
+{: .notice--primary}
 
 Cuando se exportan desde KiCad, la extensión típica es `*.gbr`. Cada archivo se diferencia según la capa que representa.  
 
 >⚠️ **Errores comunes al exportar Gerber:**  
-> - Olvidar incluir una capa (cobre, máscara, serigrafía).  
-> - Escala incorrecta de la placa.  
-> - Nombres de archivo confusos o duplicados.  
+> **•**&thinsp;Olvidar incluir una capa (cobre, máscara, serigrafía).  
+> **•**&thinsp;Escala incorrecta de la placa.  
+> **•**&thinsp;Nombres de archivo confusos o duplicados.  
 
 >ℹ️ **Consejo:**  
 > Siempre verifica con un visor de archivos Gerber todos los ficheros generados antes de seguir procesándolos.
+{: .notice--info}
 
----
-
-## Archivos de taladrado (Excellon)
+### Archivos de taladrado (Excellon)
 
 Además de los Gerber, es necesario un archivo adicional que contenga la información de de los taladros que deben realizarse en la PCB. Estos archivos se generan en el formato estándar Excellon, un estándar de la industria para máquinas CNC, y se guardan con la extensión `*.drl`.  
 
 Cada archivo define:
 
-- El **diámetro de las brocas** a utilizar  
-- Las **coordenadas X,Y** de cada perforación  
+**•**&thinsp;El **diámetro de las brocas** a utilizar  
+**•**&thinsp;Las **coordenadas X,Y** de cada perforación  
 
 >⚠️ **Tipos de taladros y precauciones:**  
-> - **Vías pasantes:** atraviesan toda la placa  
-> - **Vías ciegas:** conectan solo algunas capas entre sí  
-> - Respetar la secuencia de taladrado y velocidad recomendada para evitar daños  
-> - Comprobar que las coordenadas estén dentro de los límites de la placa  
+> **•**&thinsp;**Vías pasantes:** atraviesan toda la placa  
+> **•**&thinsp;**Vías ciegas:** conectan solo algunas capas entre sí  
+> **•**&thinsp;Respetar la secuencia de taladrado y velocidad recomendada para evitar daños  
+> **•**&thinsp;Comprobar que las coordenadas estén dentro de los límites de la placa  
 
 >ℹ️ **Importancia:**  
 > Este archivo permite que la fresadora CNC ejecute los taladros correctamente, garantizando que las conexiones pasantes y los orificios para componentes sean precisos.
+{: notice--info}
 
----
-
-## Flujo general del proceso de fabricación de una PCB
+### Flujo general del proceso de fabricación de una PCB
 
 El flujo de trabajo básico para fabricar una PCB en el taller es el siguiente:
 
@@ -114,9 +108,7 @@ El flujo de trabajo básico para fabricar una PCB en el taller es el siguiente:
    - Posicionar adecuadamente el diseño cargado
    - Lanzar el trabajo de fresado y taladrado  
 
----
-
-## Resumen visual de los archivos
+### Resumen visual de los archivos
 
 | Tipo de archivo | Extensión | Contenido | Uso | Observaciones |
 |-----------------|-----------|-----------|-----|---------------|
@@ -126,3 +118,4 @@ El flujo de trabajo básico para fabricar una PCB en el taller es el siguiente:
 >ℹ️ **Resumen final:**  
 > Comprender la función de los archivos **Gerber y Excellon** y su integración en el flujo **CAM/CNC** es fundamental para garantizar que la PCB se produzca correctamente y con precisión.  
 > Preparar y revisar los archivos cuidadosamente reduce errores y optimiza el tiempo en la máquina.
+{: notice--info}
