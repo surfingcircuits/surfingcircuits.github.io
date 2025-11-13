@@ -81,7 +81,7 @@ Antes de dar por finalizada la plantilla podemos visualizar como quedará una ve
 &thinsp;&thinsp;**-**&thinsp;${KICAD_VERSION} → Versión de KiCad utilizada.  
 &thinsp;&thinsp;**-**&thinsp;${SHEETPATH} → Ruta de la hoja actual.  
 &thinsp;&thinsp;**-**&thinsp;${FILENAME} → Nombre del archivo.  
-&thinsp;&thinsp;**-**&thinsp;Id: ${#}/${##} → Indica el número de hoja actual respecto al total de hojas.  
+&thinsp;&thinsp;**-**&thinsp;Id: \${#}/\${##} → Indica el número de hoja actual respecto al total de hojas.  
 &thinsp;&thinsp;**-**&thinsp;${COMMENT1} → Aquí indicaremos el nombre del diseñador.  
 **3.**&thinsp;Guarda la hoja personalizada como plantilla siguiendo el siguiente formato `_apellido_\_worksheet.kicad_wks`.  
 **4.**&thinsp;Comprueba que la plantilla puede aplicarse a cualquier nuevo proyecto y los campos pueden rellenarse según lo esperado.
