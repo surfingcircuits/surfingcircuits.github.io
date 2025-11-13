@@ -31,6 +31,7 @@ main:
 
 # Índice para las publicaciones de TPMM
 tpmm:
+  - title: "UP0: Fundamentos técnicos y recursos de apoyo"
   - title: "UP1: Introducción a Kicad"
     children:
       - title: "P01: Diseño de una hoja de trabajo"
