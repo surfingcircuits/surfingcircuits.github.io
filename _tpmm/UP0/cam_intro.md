@@ -21,15 +21,13 @@ toc_sticky: true
 > El objetivo es comprender la función y la estructura de los archivos en el proceso de fabricación.
 {: .notice--info}
 
-## ⚡ Notas importantes sobre compatibilidad
-
 >⚠️ **Atención:**  
 > Las capturas de pantalla y ejemplos provienen de **KiCad 9.0**, pero los conceptos y procedimientos son compatibles desde la versión 7 en adelante.  
 > Pueden existir algunas diferencias menores de interfaz entre versiones, pero los pasos funcionales son muy similares.  
 > Se recomienda siempre verificar los archivos exportados antes de comenzar su procesado como paso previo a enviarlos a la máquina CNC.
 {: .notice--warning}
 
-## Fundamentos teóricos
+## 📘 Fundamentos teóricos
 
 Antes de preparar archivos para la fabricación de PCBs, es importante entender algunos conceptos clave que forman la base del flujo de trabajo electrónico hacia el entorno CAM/CNC.
 
