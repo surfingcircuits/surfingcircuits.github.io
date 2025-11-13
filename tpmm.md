@@ -17,6 +17,14 @@ En este espacio encontrarás los recursos que necesitas para seguir el módulo q
 
 ---
 
+## UP0: Fundamentos técnicos y recursos de apoyo
+
+| Enlace | Título | Contenido |
+|:------:|:-------|:----------|
+| Enlaces | Títulos | Contenidos |
+
+---
+
 ## UP1: Introducción a Kicad
 
 | Enlace | Título | Contenido |
