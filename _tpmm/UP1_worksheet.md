@@ -64,7 +64,7 @@ Antes de editar el cajetín de la hoja de trabajo, configura la cuadrícula sobr
 
 >**Nota:**
 >Las variables de texto que más tarde serán sustituidas por el texto que se indique en cada archivo, se encuentran definidas entre los símbolos `${` `}` de la siguiente forma: `${VARIABLE}`.
-{: .notice--warning}
+{: .notice--primary}
 
 ### Visualizar la plantilla
 
