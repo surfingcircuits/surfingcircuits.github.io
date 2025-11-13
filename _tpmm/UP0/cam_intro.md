@@ -54,8 +54,7 @@ Incluye información sobre:
 **•**&thinsp;Capas mecánicas o de contorno (**Mechanical, Edge Cuts**)  
 **•**&thinsp;Capas de pasta para soldadura (**Paste Layer**)  
 
->**Nota:**  
-> Los archivos Gerber **no contienen información eléctrica ni de conexionado**, solo datos gráficos que indican dónde debe eliminarse material (fabricación sustractiva) o añadirse material (fabricación aditiva).
+>**Nota:** Los archivos Gerber **no contienen información eléctrica ni de conexionado**, solo datos gráficos que indican dónde debe eliminarse material (fabricación sustractiva) o añadirse material (fabricación aditiva).
 {: .notice--primary}
 
 Cuando se exportan desde KiCad, la extensión típica es `*.gbr`. Cada archivo se diferencia según la capa que representa.  
@@ -65,9 +64,8 @@ Cuando se exportan desde KiCad, la extensión típica es `*.gbr`. Cada archivo s
 > **•**&thinsp;Escala incorrecta de la placa.  
 > **•**&thinsp;Nombres de archivo confusos o duplicados.  
 
->ℹ️ **Consejo:**  
-> Siempre verifica con un visor de archivos Gerber todos los ficheros generados antes de seguir procesándolos.
-{: .notice--info}
+>💡 Verifica siempre con un visor de archivos Gerber, como el incluido en el propio KiCad, todos los ficheros generados antes de seguir procesándolos.
+{: .notice--success}
 
 ### Archivos de taladrado (Excellon)
 
@@ -82,38 +80,31 @@ Cada archivo define:
 > **•**&thinsp;**Vías pasantes:** atraviesan toda la placa  
 > **•**&thinsp;**Vías ciegas:** conectan solo algunas capas entre sí  
 > **•**&thinsp;Respetar la secuencia de taladrado y velocidad recomendada para evitar daños  
-> **•**&thinsp;Comprobar que las coordenadas estén dentro de los límites de la placa  
+> **•**&thinsp;Comprobar que las coordenadas estén dentro de los límites de la placa
+{: .notice--info}
 
 >ℹ️ **Importancia:**  
 > Este archivo permite que la fresadora CNC ejecute los taladros correctamente, garantizando que las conexiones pasantes y los orificios para componentes sean precisos.
-{: notice--info}
+{: .notice--info}
 
 ### Flujo general del proceso de fabricación de una PCB
 
 El flujo de trabajo básico para fabricar una PCB en el taller es el siguiente:
 
-1. **Diseño del esquema y del circuito impreso**  
-   - Realizado previamente en KiCad.  
+1. **Diseño del esquema y del circuito impreso**: realizado previamente en KiCad.  
 
-2. **Exportar los archivos de fabricación**  
-   - Generar desde KiCad los archivos **Gerber** y **Excellon** para la placa diseñada.  
+2. **Exportar los archivos de fabricación**: generando desde KiCad los archivos **Gerber** y **Excellon** para la placa diseñada.  
 
-3. **Generación del archivo LMD**  
-   - Importar los archivos en **CircuitCAM** y generar el archivo `*.lmd` específico para la máquina CNC de la marca **LPKF**.  
-   - El archivo LMD traduce los datos gráficos y de taladrado a instrucciones entendibles directamente por la electrónica de control de la máquina CNC.  
+3. **Generación del archivo LMD**: importando los archivos en **CircuitCAM** y generando el archivo `*.lmd` específico para la máquina CNC de la marca **LPKF**. Este archivo LMD traduce los datos gráficos y de taladrado a instrucciones entendibles directamente por la electrónica de control de la máquina CNC.  
 
-4. **Realización del trabajo en la CNC**  
-   - Cargar el fichero en el software **BoardMaster** 
-   - Preparar la placa virgen en el área de trabajo
-   - Posicionar adecuadamente el diseño cargado
-   - Lanzar el trabajo de fresado y taladrado  
+4. **Realización del trabajo en la CNC**: cargando el fichero en el software **BoardMaster** y lanzando el trabajo de fresado y taladrado, después de preparar la placa virgen y posicionarla en el área de trabajo.
 
 ### Resumen visual de los archivos
 
-| Tipo de archivo | Extensión | Contenido | Uso | Observaciones |
-|-----------------|-----------|-----------|-----|---------------|
-| Gerber          | *.gbr     | Capas físicas de la PCB (cobre, máscara, serigrafía) | Indica dónde mecanizar o añadir material | Verificar todas las capas antes de exportar |
-| Excellon        | *.drl     | Información de taladrado (diámetro y coordenadas) | Indica dónde perforar en CNC | Comprobar diámetros y coordenadas antes del mecanizado |
+| Tipo de archivo | Extensión | Contenido |
+|:---------------:|:---------:|:----------|
+| Gerber          | `*.gbr`     | Capas físicas de la PCB (cobre, máscara, serigrafía, borde de la placa) |
+| Excellon        | `*.drl`     | Información de taladrado (diámetro y coordenadas) |
 
 >ℹ️ **Resumen final:**  
 > Comprender la función de los archivos **Gerber y Excellon** y su integración en el flujo **CAM/CNC** es fundamental para garantizar que la PCB se produzca correctamente y con precisión.  
