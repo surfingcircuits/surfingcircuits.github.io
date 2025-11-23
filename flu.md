@@ -29,7 +29,7 @@ En este espacio encontrarás los recursos que necesitas para seguir el módulo q
 
 | Enlace | Título | Contenido |
 |:------:|:-------|:----------|
-| [Práctica 02](/flu/UP2_mechanism_examples/) | Problemas resueltos de cálculos mecánicos | Ejercicios resueltos de sistemas mecánicos reales, incluyendo cálculos de elementos mecánicos y los relativos al control del motor asociado. |
+| [Práctica&nbsp;02](/flu/UP2_mechanism_examples/) | Problemas resueltos de cálculos mecánicos | Ejercicios resueltos de sistemas mecánicos reales, incluyendo cálculos de elementos mecánicos y los relativos al control del motor asociado. |
 
 ---
 
