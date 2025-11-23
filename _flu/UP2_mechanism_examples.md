@@ -75,3 +75,106 @@ Debido a que el motor debe girar un número entero de pasos, deberá escogerse l
 $\boxed{\text{Velocidad del motor} = 64\ \text{pasos/s}}$
 
 ### Resolución del PR01.b
+
+## PR02: Extrusor indirecto de impresora 3D
+
+## PR03: Bomba de infusión de jeringa
+
+## PR04: *Slider* motorizado para cámara
+
+![Slider motorizado para cámara](/assets/flu/adafruit_slider.jpg "Slider motorizado para cámara del PR04.")
+
+**PR04)** En la web de Adafruit hemos encontrado este [proyecto](https://learn.adafruit.com/circuitpython-motorized-camera-slider/overview) en el que se ha construido con piezas impresas en 3D un *slider* motorizado para una cámara. Dicho *slider* tiene un recorrido máximo de 1 m y está movido por un motor paso a paso. La transmisión es por correa dentada y poleas GT2. La polea motriz (unida al eje del motor paso a paso) tiene 20 dientes; la correa tiene un paso de 2 mm (es decir, cada diente equivale a 2 mm sobre la circunferencia). El motor paso a paso es de 200 pasos/revolución y en el control electrónico se puede llegar a implementar un *microstepping* de hasta 1/16.
+
+**PR04.a)** Calcula la distancia que recorrerá el motor con cada paso, sin utilizar *microstepping*.
+
+**PR04.b)** Calcula la distancia que recorrerá el motor con cada micropaso si se utiliza un *microstepping* de 1/16.
+
+**PR04.c)** ¿Cuántos micro pasos deberá moverse el motor si se debe desplazar la cámara 500 mm?
+
+**PR04.d)** Para hacer un time-lapse con una duración de 2 minutos mientras la cámara se desplaza esos 500 mm, ¿cuántos micro pasos por segundo deberá enviar la electrónica de control al motor?
+
+## Recopilación de datos del problema:
+
+| Magnitud                                              | Símbolo |      Valor      |
+|:------------------------------------------------------|:-------:|:---------------:|
+| Recorrido máximo del *slider*                         |    L    |       1 m       |
+| Paso de la correa GT2                                 |    p    |      2 mm       |
+| Número de dientes de la polea motriz                  |    N    |  20 dientes     |
+| Pasos por revolución del motor paso a paso            |    P    | 200 pasos/rev   |
+| Microstepping máximo disponible                       |    μ    |      1/16       |
+
+### Resolución del PR04.a
+
+**Paso 1**: Calcular el avance lineal de la correa por cada revolución de la polea motriz.  
+La correa GT2 tiene un paso de $p = 2\ \text{mm}$ y la polea tiene $N = 20$ dientes, por lo que el avance por revolución será:
+
+$P_{\text{rev}} = N \cdot p = 20 \cdot 2 = 40\ \text{mm}$
+
+Es decir, por cada vuelta completa la correa avanza **40 mm (4 cm)**.
+
+**Paso 2**: Calcular la distancia recorrida por cada paso del motor sin microstepping.  
+El motor paso a paso es de $200$ pasos por revolución, así que:
+
+$\text{distancia/step} = \frac{P_{\text{rev}}}{200} = \frac{40\ \text{mm}}{200} = 0.2\ \text{mm}$
+
+**Resultado**:
+
+***La distancia que recorrerá el motor en cada paso (sin microstepping) es:***
+
+$\boxed{\text{Avance lineal por paso} = 0.2\ \text{mm}}$
+
+### Resolución del PR04.b
+
+**Paso 1**: Partimos de la distancia por paso completa (sin microstepping), calculada en el apartado anterior:
+
+$d_{\text{paso}} = 0.2\ \text{mm}$
+
+**Paso 2**: Calcular la distancia recorrida por cada micropaso usando microstepping de $1/16$.  
+Un micropaso equivale a dividir un paso completo en 16 partes:
+
+$d_{\text{micropaso}} = \frac{d_{\text{paso}}}{16} = \frac{0.2\ \text{mm}}{16} = 0.0125\ \text{mm}$
+
+**Resultado**:
+
+***La distancia que recorrerá el motor con cada micropaso (microstepping 1/16) es:***
+
+$\boxed{\text{Avance lineal por micropaso} = 0.0125\ \text{mm}}$
+
+### Resolución del PR04.c
+
+**Paso 1**: Partimos de la distancia por micropaso obtenida en el apartado anterior:
+
+$d_{\text{micropaso}} = 0.0125\ \text{mm}$
+
+**Paso 2**: Calcular cuántos micropasos son necesarios para recorrer $$500\ \text{mm}.$
+
+El número de micropasos será:
+
+$N = \frac{500\ \text{mm}}{0.0125\ \text{mm/micropaso}}m= 40\,000\ \text{micropasos}$
+
+**Resultado**:
+
+***Para desplazar la cámara 500 mm el motor deberá moverse:***
+
+$\boxed{40\,000\ \text{micropasos}}$
+
+### Resolución del PR04.d
+
+**Paso 1**: Tomamos los micropasos necesarios para recorrer 500 mm (resultado del apartado anterior):
+
+$N = 40\,000\ \text{micropasos}$
+
+**Paso 2**: Convertimos la duración del *time-lapse* a segundos:
+
+$2\ \text{min} = 120\ \text{s}$
+
+**Paso 3**: Calcular la cantidad de micropasos por segundo:
+
+$\text{micropasos/s} = \frac{N}{t} = \frac{40\,000}{120} = 333.33\ \text{micropasos/s}$
+
+**Resultado**:
+
+***La electrónica deberá enviar aproximadamente:***
+
+$\boxed{333\ \text{micropasos/s}}$
