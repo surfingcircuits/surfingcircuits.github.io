@@ -94,7 +94,7 @@ $\boxed{\text{Velocidad del motor} = 64\ \text{pasos/s}}$
 
 **PR04.d)** Para hacer un time-lapse con una duración de 2 minutos mientras la cámara se desplaza esos 500 mm, ¿cuántos micro pasos por segundo deberá enviar la electrónica de control al motor?
 
-## Recopilación de datos del problema:
+**Recopilación de datos del problema:**
 
 | Magnitud                                              | Símbolo |      Valor      |
 |:------------------------------------------------------|:-------:|:---------------:|
