@@ -1,0 +1,103 @@
+---
+title: Visor 3D
+permalink: /visor3d/
+toc: false
+classes: wide
+---
+
+<div id="viewer" style="width:100%; height:600px;"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r155/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.155/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.155/examples/js/controls/OrbitControls.js"></script>
+
+<script>
+  const container = document.getElementById("viewer");
+
+  // --- ESCENA ---
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0xf5f5f5);
+
+  // --- CÁMARA ---
+  const camera = new THREE.PerspectiveCamera(
+    60,
+    container.clientWidth / container.clientHeight,
+    0.1,
+    2000
+  );
+  camera.position.set(2, 2, 4);
+
+  // --- RENDERER ---
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(container.clientWidth, container.clientHeight);
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  renderer.physicallyCorrectLights = true;
+  container.appendChild(renderer.domElement);
+
+  // --- LUCES ---
+  const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.2);
+  scene.add(hemiLight);
+
+  const dirLight = new THREE.DirectionalLight(0xffffff, 1.0);
+  dirLight.position.set(5, 10, 7);
+  dirLight.castShadow = true;
+  scene.add(dirLight);
+
+  // --- CONTROLES ---
+  const controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.05;
+
+  // --- CARGAR MODELO ---
+  const loader = new THREE.GLTFLoader();
+  loader.load(
+    "/assets/models/mi_modelo.glb", // <-- Cambia el nombre si tu archivo tiene otro
+    function (gltf) {
+      const model = gltf.scene;
+
+      // Añadir modelo a la escena
+      scene.add(model);
+
+      // --- AUTO-CENTRADO ---
+      const box = new THREE.Box3().setFromObject(model);
+      const center = box.getCenter(new THREE.Vector3());
+      model.position.x += (model.position.x - center.x);
+      model.position.y += (model.position.y - center.y);
+      model.position.z += (model.position.z - center.z);
+
+      // --- AJUSTE AUTOMÁTICO DEL ZOOM ---
+      const size = box.getSize(new THREE.Vector3()).length();
+      camera.near = size / 100;
+      camera.far = size * 100;
+      camera.updateProjectionMatrix();
+
+      const fitDistance = size / (2 * Math.atan((Math.PI * camera.fov) / 360));
+      camera.position.set(center.x + fitDistance, center.y + fitDistance, center.z + fitDistance);
+
+      controls.target.copy(center);
+      controls.update();
+
+    },
+    undefined,
+    function (error) {
+      console.error("Error cargando el modelo:", error);
+    }
+  );
+
+  // --- ANIMACIÓN ---
+  function animate() {
+    requestAnimationFrame(animate);
+    controls.update();
+    renderer.render(scene, camera);
+  }
+  animate();
+
+  // --- RESPONSIVE ---
+  window.addEventListener("resize", () => {
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+  });
+</script>
