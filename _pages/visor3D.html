@@ -5,10 +5,15 @@ layout: single
 toc: false
 ---
 
-<div id="viewer" style="width:100%; height:600px;"></div>
+<div id="viewer" style="width:100%; height:600px;" 
+     data-model="{{ '/assets/3Dmodels/RE-260RA_DC_motor.gltf' | relative_url }}">
+  Cargando visor 3D...
+</div>
 
+<!-- Dependencias externas (dejamos los <script src=> ya que no bloquean) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r155/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.155/examples/js/loaders/GLTFLoader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.155/examples/js/controls/OrbitControls.js"></script>
 
-<script src="/assets/js/visor3d.js"></script>
+<!-- Nuestro script externo -->
+<script src="{{ '/assets/js/visor3d.js' | relative_url }}"></script>
