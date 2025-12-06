@@ -8,17 +8,117 @@ toc: false
 <!-- Carga model-viewer -->
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<!-- Visor del modelo -->
-<model-viewer
-    src="{{ '/assets/3Dmodels/RE-260RA_DC_motor.gltf' | relative_url }}"
-    alt="Modelo 3D"
-    ar
-    ar-modes="webxr scene-viewer quick-look"
-    environment-image="neutral"
-    camera-controls
-    auto-rotate
-    auto-rotate-delay="500"
-    shadow-intensity="1"
-    exposure="1.2"
-    style="width: 100%; height: 600px; margin: 0 auto; display: block;">
-</model-viewer>
+<style>
+  .viewer-frame {
+    border: 3px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    background: #f7f7f7;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  #mv {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .controls {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .controls button {
+    padding: 10px;
+    font-size: 14px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .controls button:hover {
+    background: #005bb5;
+  }
+
+  .controls button.full {
+    grid-column: span 3;
+  }
+</style>
+
+<div class="viewer-frame">
+  <model-viewer id="mv"
+      src="{{ '/assets/3Dmodels/RE-260RA_DC_motor.gltf' | relative_url }}"
+      alt="Modelo 3D"
+      ar
+      environment-image="neutral"
+      camera-controls
+      auto-rotate
+      auto-rotate-delay="800"
+      shadow-intensity="1"
+      exposure="1.2">
+  </model-viewer>
+
+  <div class="controls">
+      <button onclick="zoomIn()">🔍 Zoom +</button>
+      <button onclick="zoomOut()">🔎 Zoom -</button>
+      <button onclick="resetView()">🔄 Reset</button>
+
+      <button onclick="rotateLeft()">↺ Rotar izq</button>
+      <button onclick="rotateRight()">↻ Rotar der</button>
+      <button onclick="toggleAutoRotate()">🎞 Auto-rotar</button>
+
+      <button onclick="rotateUp()">⬆ Subir cámara</button>
+      <button onclick="rotateDown()">⬇ Bajar cámara</button>
+
+      <button class="full" onclick="centerModel()">🎯 Centrar modelo</button>
+  </div>
+</div>
+
+<script>
+  const mv = document.getElementById("mv");
+  let autoRotating = true;
+
+  function zoomIn() { mv.zoom(0.8); }
+  function zoomOut() { mv.zoom(1.25); }
+
+  function resetView() {
+    mv.cameraOrbit = "0deg 75deg 2m";
+    mv.resetTurntableRotation();
+  }
+
+  function rotateLeft() {
+    const [theta, phi, radius] = mv.cameraOrbit.split(" ");
+    mv.cameraOrbit = `${parseFloat(theta) - 20}deg ${phi} ${radius}`;
+  }
+
+  function rotateRight() {
+    const [theta, phi, radius] = mv.cameraOrbit.split(" ");
+    mv.cameraOrbit = `${parseFloat(theta) + 20}deg ${phi} ${radius}`;
+  }
+
+  function rotateUp() {
+    const [theta, phi, radius] = mv.cameraOrbit.split(" ");
+    mv.cameraOrbit = `${theta} ${parseFloat(phi) - 10}deg ${radius}`;
+  }
+
+  function rotateDown() {
+    const [theta, phi, radius] = mv.cameraOrbit.split(" ");
+    mv.cameraOrbit = `${theta} ${parseFloat(phi) + 10}deg ${radius}`;
+  }
+
+  function toggleAutoRotate() {
+    autoRotating = !autoRotating;
+    mv.autoRotate = autoRotating;
+  }
+
+  function centerModel() {
+    mv.cameraTarget = "0m 0m 0m";
+    resetView();
+  }
+</script>
