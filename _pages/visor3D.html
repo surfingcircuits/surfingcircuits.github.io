@@ -38,7 +38,7 @@ toc: false
     display: block;
   }
 
-  .controls input[type="range"], .controls select {
+  .controls input[type="range"], .controls select, .controls input[type="color"] {
     width: 100%;
   }
 
@@ -63,7 +63,7 @@ toc: false
       auto-rotate
       auto-rotate-delay="800"
       shadow-intensity="1"
-      exposure="1.2"
+      exposure="0.8"
       environment-image="neutral"
       style="width: 100%; height: 500px;">
   </model-viewer>
@@ -90,6 +90,11 @@ toc: false
         Exposición:
         <input type="range" id="exposureSlider" min="0" max="2" value="1.2" step="0.05"
                oninput="updateExposure(this.value)">
+      </label>
+
+      <label>
+        Fondo:
+        <input type="color" id="bgColorPicker" value="#e6e6e6" onchange="changeBackground(this.value)">
       </label>
 
   </div>
@@ -124,6 +129,11 @@ toc: false
 
   function changeModel(nombre) {
     mv.src = `{{ '/assets/3Dmodels/' | relative_url }}${nombre}`;
+  }
+
+  /* NUEVO: función para cambiar color de fondo */
+  function changeBackground(val) {
+    mv.style.backgroundColor = val;
   }
 
   /* Cargar modelo desde URL si existe, sino modelo por defecto */
