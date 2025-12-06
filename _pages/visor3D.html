@@ -70,15 +70,15 @@ toc: false
 
   <div class="controls">
 
-      <button id="autoBtn" onclick="toggleAutoRotate()">Auto-rotar: ON</button>
-
       <label>
-        Modelo:
+        Selecciona el modelo:
         <select id="modelSelect" onchange="changeModel(this.value)">
           <option value="RE-260RA_DC_motor.gltf">Motor</option>
           <!-- Agrega aquí todos los modelos manualmente -->
         </select>
       </label>
+    
+      <button id="autoBtn" onclick="toggleAutoRotate()">Auto-rotar: ON</button>
 
       <label>
         Sombras:
@@ -88,12 +88,12 @@ toc: false
 
       <label>
         Exposición:
-        <input type="range" id="exposureSlider" min="0" max="2" value="1.2" step="0.05"
+        <input type="range" id="exposureSlider" min="0" max="2" value="0.8" step="0.05"
                oninput="updateExposure(this.value)">
       </label>
 
       <label>
-        Fondo:
+        Color de fondo:
         <input type="color" id="bgColorPicker" value="#e6e6e6" onchange="changeBackground(this.value)">
       </label>
 
