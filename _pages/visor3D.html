@@ -1,19 +1,24 @@
 ---
 title: "Visor 3D"
-permalink: /visor3D/
+permalink: /visor3d/
 layout: single
 toc: false
 ---
 
-<div id="viewer" style="width:100%; height:600px;" 
-     data-model="{{ '/assets/3Dmodels/motor2.glb' | relative_url }}">
-  Cargando visor 3D...
-</div>
+<!-- Carga model-viewer -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<!-- Dependencias externas (dejamos los <script src=> ya que no bloquean) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r155/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.155/examples/js/loaders/GLTFLoader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.155/examples/js/controls/OrbitControls.js"></script>
-
-<!-- Nuestro script externo -->
-<script src="{{ '/assets/js/visor3d.js' | relative_url }}"></script>
+<!-- Visor del modelo -->
+<model-viewer
+    src="{{ '/assets/3Dmodels/RE-260RA_DC_motor.gltf' | relative_url }}"
+    alt="Modelo 3D"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    environment-image="neutral"
+    camera-controls
+    auto-rotate
+    auto-rotate-delay="500"
+    shadow-intensity="1"
+    exposure="1.2"
+    style="width: 100%; height: 600px; margin: 0 auto; display: block;">
+</model-viewer>
