@@ -38,7 +38,7 @@ toc: false
     display: block;
   }
 
-  .controls input[type="range"] {
+  .controls input[type="range"], .controls select {
     width: 100%;
   }
 
@@ -73,6 +73,16 @@ toc: false
       <button id="autoBtn" onclick="toggleAutoRotate()">Auto-rotar: ON</button>
 
       <label>
+        Modelo:
+        <select id="modelSelect" onchange="changeModel(this.value)">
+          <option value="RE-260RA_DC_motor.gltf">Motor</option>
+          <option value="piezaA.gltf">Pieza A</option>
+          <option value="brazo.gltf">Brazo</option>
+          <!-- Agrega aquí todos los modelos manualmente -->
+        </select>
+      </label>
+
+      <label>
         Sombras:
         <input type="range" id="shadowSlider" min="0" max="1" value="1" step="0.01"
                oninput="updateShadow(this.value)">
@@ -90,6 +100,7 @@ toc: false
 <script>
   const mv = document.getElementById("mv");
   const autoBtn = document.getElementById("autoBtn");
+  const modelSelect = document.getElementById("modelSelect");
   let autoRotating = true;
 
   /* Fijar ACES siempre */
@@ -98,6 +109,7 @@ toc: false
   /* Fondo gris claro */
   mv.style.backgroundColor = "#e6e6e6";
 
+  /* Funciones básicas */
   function toggleAutoRotate() {
     autoRotating = !autoRotating;
     mv.autoRotate = autoRotating;
@@ -110,5 +122,22 @@ toc: false
 
   function updateExposure(val) {
     mv.exposure = parseFloat(val);
+  }
+
+  function changeModel(nombre) {
+    mv.src = `{{ '/assets/3Dmodels/' | relative_url }}${nombre}`;
+  }
+
+  /* Cargar modelo desde URL si existe, sino modelo por defecto */
+  const params = new URLSearchParams(window.location.search);
+  const modelParam = params.get("model");
+  const defaultModel = "RE-260RA_DC_motor.gltf";
+
+  if(modelParam) {
+    changeModel(modelParam);
+    modelSelect.value = modelParam;
+  } else {
+    changeModel(defaultModel);
+    modelSelect.value = defaultModel;
   }
 </script>
