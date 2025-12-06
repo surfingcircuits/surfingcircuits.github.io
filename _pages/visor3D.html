@@ -14,7 +14,7 @@ toc: false
     border-radius: 12px;
     padding: 15px;
     background: #f7f7f7;
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
   }
 
@@ -28,32 +28,35 @@ toc: false
   .controls {
     margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
   }
 
-  .controls button {
-    padding: 10px;
+  .controls button, .controls select {
+    padding: 8px 12px;
     font-size: 14px;
-    background: #0073e6;
-    color: white;
-    border: none;
     border-radius: 6px;
     cursor: pointer;
   }
 
-  .controls button:hover {
-    background: #005bb5;
+  .controls button {
+    background: #0073e6;
+    color: white;
+    border: none;
   }
 
-  .controls button.full {
-    grid-column: span 3;
+  .controls button:hover { background: #005bb5; }
+
+  .controls select {
+    border: 1px solid #ccc;
   }
+
+  .controls .full { grid-column: span 2; }
 </style>
 
 <div class="viewer-frame">
   <model-viewer id="mv"
-      src="{{ '/assets/3Dmodels/RE-260RA_DC_motor.gltf' | relative_url }}"
+      src="{{ '/assets/3Dmodels/RE-260RA_DC_motor.glb' | relative_url }}"
       alt="Modelo 3D"
       ar
       environment-image="neutral"
@@ -61,22 +64,65 @@ toc: false
       auto-rotate
       auto-rotate-delay="800"
       shadow-intensity="1"
-      exposure="1.2">
+      exposure="1.2"
+      style="width: 100%; height: 500px;">
   </model-viewer>
 
   <div class="controls">
-      <button onclick="zoomIn()">🔍 Zoom +</button>
-      <button onclick="zoomOut()">🔎 Zoom -</button>
-      <button onclick="resetView()">🔄 Reset</button>
-
-      <button onclick="rotateLeft()">↺ Rotar izq</button>
-      <button onclick="rotateRight()">↻ Rotar der</button>
       <button onclick="toggleAutoRotate()">🎞 Auto-rotar</button>
 
-      <button onclick="rotateUp()">⬆ Subir cámara</button>
-      <button onclick="rotateDown()">⬇ Bajar cámara</button>
+      <label>
+        Sombras
+        <select id="shadowSelect" onchange="changeShadow()">
+          <option value="0">0</option>
+          <option value="0.25">0.25</option>
+          <option value="0.5">0.5</option>
+          <option value="0.75">0.75</option>
+          <option value="1" selected>1</option>
+        </select>
+      </label>
 
-      <button class="full" onclick="centerModel()">🎯 Centrar modelo</button>
+      <label>
+        Ambiente (HDRI)
+        <select id="envSelect" onchange="changeEnvironment()">
+          <option value="neutral" selected>neutral</option>
+          <option value="studio">studio</option>
+          <option value="city">city</option>
+          <option value="courtyard">courtyard</option>
+        </select>
+      </label>
+
+      <label>
+        Exposición
+        <select id="exposureSelect" onchange="changeExposure()">
+          <option value="0.5">0.5</option>
+          <option value="0.8">0.8</option>
+          <option value="1.0">1.0</option>
+          <option value="1.2" selected>1.2</option>
+          <option value="1.5">1.5</option>
+          <option value="2.0">2.0</option>
+        </select>
+      </label>
+
+      <label>
+        Fondo
+        <select id="bgSelect" onchange="changeBackground()">
+          <option value="#ffffff" selected>Blanco</option>
+          <option value="#000000">Negro</option>
+          <option value="#f7f7f7">Gris claro</option>
+          <option value="#87ceeb">Celeste</option>
+        </select>
+      </label>
+
+      <label>
+        Render (Tone Mapping)
+        <select id="toneSelect" onchange="changeToneMapping()">
+          <option value="linear">Linear</option>
+          <option value="reinhard" selected>Reinhard</option>
+          <option value="aces">ACES</option>
+          <option value="neutral">Neutral</option>
+        </select>
+      </label>
   </div>
 </div>
 
@@ -84,41 +130,33 @@ toc: false
   const mv = document.getElementById("mv");
   let autoRotating = true;
 
-  function zoomIn() { mv.zoom(0.8); }
-  function zoomOut() { mv.zoom(1.25); }
-
-  function resetView() {
-    mv.cameraOrbit = "0deg 75deg 2m";
-    mv.resetTurntableRotation();
-  }
-
-  function rotateLeft() {
-    const [theta, phi, radius] = mv.cameraOrbit.split(" ");
-    mv.cameraOrbit = `${parseFloat(theta) - 20}deg ${phi} ${radius}`;
-  }
-
-  function rotateRight() {
-    const [theta, phi, radius] = mv.cameraOrbit.split(" ");
-    mv.cameraOrbit = `${parseFloat(theta) + 20}deg ${phi} ${radius}`;
-  }
-
-  function rotateUp() {
-    const [theta, phi, radius] = mv.cameraOrbit.split(" ");
-    mv.cameraOrbit = `${theta} ${parseFloat(phi) - 10}deg ${radius}`;
-  }
-
-  function rotateDown() {
-    const [theta, phi, radius] = mv.cameraOrbit.split(" ");
-    mv.cameraOrbit = `${theta} ${parseFloat(phi) + 10}deg ${radius}`;
-  }
-
   function toggleAutoRotate() {
     autoRotating = !autoRotating;
     mv.autoRotate = autoRotating;
   }
 
-  function centerModel() {
-    mv.cameraTarget = "0m 0m 0m";
-    resetView();
+  function changeShadow() {
+    const val = parseFloat(document.getElementById("shadowSelect").value);
+    mv.shadowIntensity = val;
+  }
+
+  function changeEnvironment() {
+    const val = document.getElementById("envSelect").value;
+    mv.environmentImage = val;
+  }
+
+  function changeExposure() {
+    const val = parseFloat(document.getElementById("exposureSelect").value);
+    mv.exposure = val;
+  }
+
+  function changeBackground() {
+    const val = document.getElementById("bgSelect").value;
+    mv.style.backgroundColor = val;
+  }
+
+  function changeToneMapping() {
+    const val = document.getElementById("toneSelect").value;
+    mv.toneMapping = val;
   }
 </script>
