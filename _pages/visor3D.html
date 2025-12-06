@@ -76,8 +76,6 @@ toc: false
         Modelo:
         <select id="modelSelect" onchange="changeModel(this.value)">
           <option value="RE-260RA_DC_motor.gltf">Motor</option>
-          <option value="piezaA.gltf">Pieza A</option>
-          <option value="brazo.gltf">Brazo</option>
           <!-- Agrega aquí todos los modelos manualmente -->
         </select>
       </label>
@@ -131,7 +129,7 @@ toc: false
   /* Cargar modelo desde URL si existe, sino modelo por defecto */
   const params = new URLSearchParams(window.location.search);
   const modelParam = params.get("model");
-  const defaultModel = "RE-260RA_DC_motor.gltf";
+  const defaultModel = "visor3D_text.gltf";
 
   if(modelParam) {
     changeModel(modelParam);
