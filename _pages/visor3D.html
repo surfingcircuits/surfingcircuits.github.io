@@ -32,7 +32,9 @@ Aquí podrás visualizar los modelos 3D de algunas de las prácticas.
   .controls {
     margin-top: 15px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+    /* ^ Esta es la linea original, la actual busca que quepan únicamente 2 botones en el grid */
     gap: 15px;
     align-items: center;
   }
