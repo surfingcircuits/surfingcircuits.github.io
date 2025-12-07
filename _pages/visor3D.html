@@ -220,3 +220,222 @@ toc: false
   animate();
 </script>
 
+
+<!-- CDN Three.js -->
+<script type="module">
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js";
+import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/controls/OrbitControls.js";
+import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/loaders/GLTFLoader.js";
+
+let scene, camera, renderer, controls, loader;
+let currentModel = null;
+let autoRotate = true;
+
+/* -------------------------------------------- */
+/* INITIAL SETUP                                */
+/* -------------------------------------------- */
+function init() {
+    const container = document.getElementById("viewerContainer");
+
+    scene = new THREE.Scene();
+    scene.background = new THREE.Color("#e6e6e6"); // Fondo gris claro
+
+    camera = new THREE.PerspectiveCamera(55, container.clientWidth / 500, 0.1, 1000);
+    camera.position.set(2, 2, 3);
+
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.setSize(container.clientWidth, 500);
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.2;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    container.appendChild(renderer.domElement);
+
+    // Controles orbitales
+    controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.autoRotate = true;
+
+    // Luz principal
+    const light = new THREE.DirectionalLight(0xffffff, 1.0);
+    light.position.set(3, 5, 3);
+    light.castShadow = true;
+    scene.add(light);
+
+    // Luz ambiental
+    scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+
+    loader = new GLTFLoader();
+
+    animate();
+}
+
+/* -------------------------------------------- */
+/* LOAD MODEL                                    */
+/* -------------------------------------------- */
+function loadModel(modelName) {
+    const path = `/assets/3Dmodels/${modelName}`;
+
+    if (currentModel) {
+        scene.remove(currentModel);
+    }
+
+    loader.load(path, gltf => {
+        currentModel = gltf.scene;
+        currentModel.traverse(node => {
+            if (node.isMesh) {
+                node.castShadow = true;
+                node.receiveShadow = true;
+            }
+        });
+
+        scene.add(currentModel);
+
+        // Auto-centering
+        const box = new THREE.Box3().setFromObject(currentModel);
+        const center = box.getCenter(new THREE.Vector3());
+        currentModel.position.sub(center);
+
+    }, undefined, error => {
+        console.error("Error al cargar el modelo:", error);
+    });
+}
+
+/* -------------------------------------------- */
+/* ANIMATION LOOP                                */
+/* -------------------------------------------- */
+function animate() {
+    requestAnimationFrame(animate);
+    controls.autoRotate = autoRotate;
+    controls.update();
+    renderer.render(scene, camera);
+}
+
+/* -------------------------------------------- */
+/* UI HANDLERS                                   */
+/* -------------------------------------------- */
+window.toggleAutoRotate = function () {
+    autoRotate = !autoRotate;
+    document.getElementById("autoBtn").textContent =
+        `Auto-rotar: ${autoRotate ? "ON" : "OFF"}`;
+};
+
+window.updateShadow = function (v) {
+    scene.traverse(obj => {
+        if (obj.isDirectionalLight) obj.intensity = parseFloat(v);
+    });
+};
+
+window.updateExposure = function (v) {
+    renderer.toneMappingExposure = parseFloat(v);
+};
+
+window.changeBackground = function (v) {
+    scene.background = new THREE.Color(v);
+};
+
+window.changeModel = function (name) {
+    loadModel(name);
+};
+
+/* -------------------------------------------- */
+/* LOAD INITIAL MODEL                            */
+/* -------------------------------------------- */
+window.addEventListener("DOMContentLoaded", () => {
+    init();
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const modelParam = urlParams.get("model");
+
+    const defaultModel = "RE-260RA_DC_motor.gltf";
+
+    const select = document.getElementById("modelSelect");
+    select.value = modelParam || defaultModel;
+
+    loadModel(select.value);
+});
+</script>
+
+<style>
+.viewer-frame {
+  border: 3px solid #ccc;
+  border-radius: 12px;
+  padding: 15px;
+  background: #f0f0f0;
+  max-width: 950px;
+  margin: auto;
+}
+
+#viewerContainer {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+  background: #e6e6e6;
+}
+
+.controls {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  align-items: center;
+}
+
+.controls label {
+  font-size: 14px;
+  display: block;
+}
+
+.controls input[type="range"], .controls select, .controls input[type="color"] {
+  width: 100%;
+}
+
+.controls button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #0073e6;
+  color: white;
+  border: none;
+}
+
+.controls button:hover { background: #005bb5; }
+</style>
+
+<div class="viewer-frame">
+
+  <div id="viewerContainer"></div>
+
+  <div class="controls">
+
+      <button id="autoBtn" onclick="toggleAutoRotate()">Auto-rotar: ON</button>
+
+      <label>
+        Modelo:
+        <select id="modelSelect" onchange="changeModel(this.value)">
+          <option value="RE-260RA_DC_motor.gltf">Motor</option>
+          <option value="pieza1.gltf">Pieza 1</option>
+          <option value="pieza2.gltf">Pieza 2</option>
+        </select>
+      </label>
+
+      <label>
+        Sombras:
+        <input type="range" min="0" max="2" value="1" step="0.05"
+               oninput="updateShadow(this.value)">
+      </label>
+
+      <label>
+        Exposición:
+        <input type="range" min="0" max="2" value="1.2" step="0.05"
+               oninput="updateExposure(this.value)">
+      </label>
+
+      <label>
+        Fondo:
+        <input type="color" value="#e6e6e6" oninput="changeBackground(this.value)">
+      </label>
+
+  </div>
+</div>
