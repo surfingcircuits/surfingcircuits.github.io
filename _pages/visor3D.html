@@ -137,6 +137,7 @@ Aquí podrás visualizar los modelos 3D de algunas de las prácticas.
 
   function changeModel(nombre) {
     mv.src = `{{ '/assets/3Dmodels/' | relative_url }}${nombre}`;
+    updateDownloadButton();
   }
 
   /* NUEVO: función para cambiar color de fondo */
@@ -158,13 +159,40 @@ Aquí podrás visualizar los modelos 3D de algunas de las prácticas.
   }
 
   function downloadModel() {
-    const modelo = modelSelect.value;
-    const link = document.createElement("a");
-    link.href = `{{ '/assets/3Dmodels/' | relative_url }}${modelo}`;
-    link.download = modelo;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const modeloGltf = modelSelect.value;
+    const modeloStep = modeloGltf.replace(/\.gltf$/i, ".step");
+    const url = `{{ '/assets/3Dmodels/' | relative_url }}${modeloStep}`;
+  
+    fetch(url, { method: "HEAD" })
+      .then(response => {
+        if (!response.ok) {
+          alert("El modelo STEP no está disponible para descarga.");
+          return;
+        }
+  
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = modeloStep;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      });
   }
+
+  function updateDownloadButton() {
+  const modeloGltf = modelSelect.value;
+  const modeloStep = modeloGltf.replace(/\.gltf$/i, ".step");
+  const url = `{{ '/assets/3Dmodels/' | relative_url }}${modeloStep}`;
+
+  fetch(url, { method: "HEAD" })
+    .then(response => {
+      downloadBtn.disabled = !response.ok;
+      downloadBtn.style.opacity = response.ok ? "1" : "0.5";
+      downloadBtn.style.cursor = response.ok ? "pointer" : "not-allowed";
+    });
+  }
+
+  const downloadBtn = document.getElementById("downloadBtn");
+  updateDownloadButton();
   
 </script>
