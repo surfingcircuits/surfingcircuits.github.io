@@ -83,6 +83,8 @@ Aquí podrás visualizar los modelos 3D de algunas de las prácticas.
           <!-- Agrega aquí todos los modelos manualmente -->
         </select>
       </label>
+
+      <button id="downloadBtn" onclick="downloadModel()">Descargar modelo</button>
     
       <button id="autoBtn" onclick="toggleAutoRotate()">Auto-rotar: ON</button>
 
@@ -154,4 +156,15 @@ Aquí podrás visualizar los modelos 3D de algunas de las prácticas.
     changeModel(defaultModel);
     modelSelect.value = defaultModel;
   }
+
+  function downloadModel() {
+    const modelo = modelSelect.value;
+    const link = document.createElement("a");
+    link.href = `{{ '/assets/3Dmodels/' | relative_url }}${modelo}`;
+    link.download = modelo;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  
 </script>
