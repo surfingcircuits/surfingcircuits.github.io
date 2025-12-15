@@ -47,7 +47,7 @@ En este espacio encontrarás los recursos que necesitas para seguir el módulo q
 
 | Enlace | Título | Contenido |
 |:------:|:-------|:----------|
-| Enlaces | Títulos | Contenidos |
+| [Práctica&nbsp;01](/tpmm/UP3_create_symbol/) | Diseño de un símbolo personalizado | Creación de un símbolo personalizado de un sensor de humedad. |
 
 ---
 
