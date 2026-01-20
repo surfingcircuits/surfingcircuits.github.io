@@ -1,12 +1,13 @@
 ---
 layout: splash
-title: "Surfing Circuits"
-excerpt: "Electrónica creativa, circuitos y tecnología aplicada."
 permalink: /
+title: Surfing Circuits
+excerpt: Electrónica creativa y hardware experimental
 
 header:
+  overlay_color: "#000"
+  overlay_filter: 0.6
   overlay_image: /assets/images/hero.jpg
-  overlay_filter: 0.55
   actions:
     - label: "Proyectos"
       url: "/projects/"
@@ -14,30 +15,27 @@ header:
       url: "https://github.com/surfingcircuits"
 
 feature_row:
-  - image_path: /assets/images/icon-projects.png
-    title: "Proyectos"
-    excerpt: "Circuitos, hardware y experimentos."
+  - title: "Proyectos"
+    excerpt: "Circuitos, hardware y experimentos documentados."
     url: "/projects/"
-    btn_label: "Explorar"
+    btn_label: "Ver proyectos"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/blog.png
-    title: "Blog"
+  - title: "Blog"
     excerpt: "Notas técnicas y procesos."
     url: "/blog/"
-    btn_label: "Leer"
+    btn_label: "Leer blog"
     btn_class: "btn--primary"
 
-  - image_path: /assets/images/about.png
-    title: "Sobre mí"
-    excerpt: "Quién está detrás del proyecto."
+  - title: "Sobre mí"
+    excerpt: "Información sobre el proyecto."
     url: "/about/"
     btn_label: "Conocer"
     btn_class: "btn--primary"
 ---
 
-## Electrónica + surf + experimentación
+## Electrónica · Surf · Circuitos
 
-Un espacio para crear, documentar y compartir proyectos de **hardware y electrónica creativa**.
+Un espacio para **crear, documentar y compartir** proyectos de electrónica y hardware.
 
 {% include feature_row %}
