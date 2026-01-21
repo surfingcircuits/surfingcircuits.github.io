@@ -1,62 +1,67 @@
 ---
+title: "Splash Page"
 layout: splash
-author_profile: false
+permalink: /splash-page/
+date: 2016-03-23T11:48:41-04:00
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/unsplash-image-1.jpg
+  actions:
+    - label: "Download"
+      url: "https://github.com/mmistakes/minimal-mistakes/"
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+intro: 
+  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+feature_row:
+  - image_path: assets/images/unsplash-gallery-image-1-th.jpg
+    alt: "placeholder image 1"
+    title: "Placeholder 1"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    alt: "placeholder image 2"
+    title: "Placeholder 2"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/unsplash-gallery-image-3-th.jpg
+    title: "Placeholder 3"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+feature_row2:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Placeholder Image Left Aligned"
+    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row3:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Placeholder Image Right Aligned"
+    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+feature_row4:
+  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+    alt: "placeholder image 2"
+    title: "Placeholder Image Center Aligned"
+    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
+    url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 ---
 
-<!-- Hero principal -->
-<section class="splash-hero">
-  <div class="splash-hero__content">
-    <h1>Bienvenido al IES Laurona</h1>
-    <p>Explora las publicaciones más recientes y el material del módulo TPMM.</p>
-  </div>
-</section>
+{% include feature_row id="intro" type="center" %}
 
-<!-- Publicaciones recientes -->
-<section class="recent-posts">
-  <h2>Publicaciones recientes</h2>
-  
-  {% assign all_entries = site.posts | concat: site.tpmm %}
-  {% assign all_entries = all_entries | sort: 'date' | reverse %}
+{% include feature_row %}
 
-  <div class="custom-grid">
-    {% for post in all_entries limit:10 %}
-      <div class="card">
-        <a href="{{ post.url | relative_url }}">
-          {% if post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-          {% endif %}
-          <h3>{{ post.title }}</h3>
-          {% if post.excerpt %}
-            <p>{{ post.excerpt }}</p>
-          {% endif %}
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+{% include feature_row id="feature_row2" type="left" %}
 
-  <div class="archive__links">
-    <p><a href="/year-archive/">Ver todos los posts</a></p>
-    <p><a href="/tpmm/">Ver todas las entradas de TPMM</a></p>
-  </div>
-</section>
+{% include feature_row id="feature_row3" type="right" %}
 
-<!-- CSS interno para el grid -->
-<style>
-.custom-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 2rem;
-  margin-top: 1.5rem;
-}
-.card {
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  background: #fff;
-  transition: transform 0.2s;
-}
-.card:hover { transform: translateY(-5px); }
-.card img { width: 100%; height: auto; display: block; }
-.card h3 { margin: 0.5rem 1rem 0 1rem; }
-.card p { margin: 0.5rem 1rem 1rem 1rem; }
-</style>
+{% include feature_row id="feature_row4" type="center" %}
