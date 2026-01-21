@@ -4,23 +4,20 @@ layout: default
 header:
   overlay_image: /assets/images/wave_header.jpg
   overlay_filter: 0.6
+  title: "Surfing Circuits"
+  excerpt: "Electrónica, circuitos y aprendizaje práctico"
+  actions:
+    - label: "Proyectos"
+      url: "/projects/"
+    - label: "GitHub"
+      url: "https://github.com/surfingcircuits"
+  height: 60vh
+---
 ---
 
+{% include page__hero.html %}
+
 <div class="page__content">
-
-  <!-- HERO -->
-  <header class="page__hero--overlay">
-    <div class="wrapper">
-      <h1 class="page__title">{{ site.title }}</h1>
-      <p class="page__lead">{{ site.description }}</p>
-
-      <p>
-        <a href="/projects/" class="btn btn--primary">Proyectos</a>
-        <a href="/blog/" class="btn btn--inverse">Blog</a>
-        <a href="https://github.com/surfingcircuits" class="btn btn--inverse">GitHub</a>
-      </p>
-    </div>
-  </header>
 
   <!-- CONTENIDO DE LA PÁGINA -->
   {{ content }}
