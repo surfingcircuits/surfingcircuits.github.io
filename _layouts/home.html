@@ -1,28 +1,45 @@
 ---
-layout: archive
+layout: default
 ---
 
-<h3 class="archive__subtitle">
-  {{ site.data.ui-text[site.locale].recent_posts | default: "Publicaciones recientes" }}
-</h3>
+<div class="page__content">
 
-{{ content }}
+  <!-- HERO -->
+  <header class="page__hero--overlay">
+    <div class="wrapper">
+      <h1 class="page__title">{{ site.title }}</h1>
+      <p class="page__lead">{{ site.description }}</p>
 
-{% comment %}
-  Recogemos los posts de _posts y las entradas de la colección _tpmm
-{% endcomment %}
-{% assign all_entries = site.posts | concat: site.tpmm %}
-{% assign all_entries = all_entries | sort: 'date' | reverse %}
+      <p>
+        <a href="/projects/" class="btn btn--primary">Proyectos</a>
+        <a href="/blog/" class="btn btn--inverse">Blog</a>
+        <a href="https://github.com/surfingcircuits" class="btn btn--inverse">GitHub</a>
+      </p>
+    </div>
+  </header>
 
-{% assign entries_layout = page.entries_layout | default: 'grid' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in all_entries limit:10 %}
-    {% assign post = post %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
-</div>
+  <!-- CONTENIDO DE LA PÁGINA -->
+  {{ content }}
 
-<div class="archive__links">
-  <p><a href="/year-archive/">Ver todos los posts</a></p>
-  <p><a href="/tpmm/">Ver todas las publicaciones de TPMM</a></p>
+  <!-- ÚLTIMAS PUBLICACIONES -->
+  <section class="archive">
+    <h2 class="archive__subtitle">
+      {{ site.data.ui-text[site.locale].recent_posts | default: "Publicaciones recientes" }}
+    </h2>
+
+    {% assign all_entries = site.posts | concat: site.tpmm %}
+    {% assign all_entries = all_entries | sort: 'date' | reverse %}
+
+    <div class="entries-grid">
+      {% for post in all_entries limit:4 %}
+        {% include archive-single.html type="grid" %}
+      {% endfor %}
+    </div>
+
+    <p>
+      <a href="/year-archive/">Ver todas las publicaciones</a><br>
+      <a href="/tpmm/">Índice completo del módulo TPMM</a>
+    </p>
+  </section>
+
 </div>
