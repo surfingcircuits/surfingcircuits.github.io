@@ -37,18 +37,6 @@ feature_row:
     url: "/docs/layouts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-    - label: "<i class='fas fa-graduation-cap'></i> Normal"
-      url: "/tpmm/"
-      btn_class: "btn"
-    - label: "<i class='fas fa-book-open'></i> Primary"
-      url: "/tpmm/"
-      btn_class: "btn--primary"
-    - label: "<i class='fas fa-book-open'></i> Inverse"
-      url: "/tpmm/"
-      btn_class: "btn--inverse"
-    - label: "<i class='fas fa-book-open'></i> Primary"
-      url: "/tpmm/"
-      btn_class: "btn--light-outline"
   - image_path: /assets/images/mm-free-feature.png
     alt: "100% free"
     title: "100% free"
@@ -59,3 +47,13 @@ feature_row:
 ---
 
 {% include feature_row %}
+
+## Prueba de botones
+
+<div style="margin: 2em 0;">
+  <a href="#" class="btn">Normal</a>
+  <a href="#" class="btn--primary">Primary</a>
+  <a href="#" class="btn--inverse">Inverse</a>
+  <a href="#" class="btn--light-outline">Light Outline</a>
+</div>
+
