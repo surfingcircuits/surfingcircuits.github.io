@@ -7,13 +7,21 @@ header:
   overlay_image: assets/images/wave_header.jpg
   overlay_filter: 0.6
   title: "Surfing Circuits"
-  excerpt: "Electrónica, circuitos y aprendizaje práctico"
   actions:
-    - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
+    - label: "<i class='fas fa-graduation-cap'></i> Normal"
+      url: "/tpmm/"
+      btn_class: "btn"
+    - label: "<i class='fas fa-book-open'></i> Primary"
+      url: "/tpmm/"
+      btn_class: "btn--primary"
+    - label: "<i class='fas fa-book-open'></i> Inverse"
+      url: "/tpmm/"
+      btn_class: "btn--inverse"
+    - label: "<i class='fas fa-book-open'></i> Primary"
+      url: "/tpmm/"
+      btn_class: "btn--light-outline"
 excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3">Latest release v4.27.3</a></small>
+  Aprendizaje técnico basado en la práctica, los proyectos y la experiencia real.
 feature_row:
   - image_path: /assets/images/tpmm_splash.jpg
     alt: "TPMM"
