@@ -5,21 +5,13 @@ permalink: /
 hidden: true
 header:
   overlay_image: assets/images/wave_header.jpg
-  overlay_filter: 0.6
+  overlay_filter: 0.5
   title: "Surfing Circuits"
   actions:
-    - label: "<i class='fas fa-graduation-cap'></i> Normal"
-      url: "/tpmm/"
-      btn_class: "btn"
-    - label: "<i class='fas fa-book-open'></i> Primary"
-      url: "/tpmm/"
-      btn_class: "btn--primary"
-    - label: "<i class='fas fa-book-open'></i> Inverse"
-      url: "/tpmm/"
-      btn_class: "btn--inverse"
-    - label: "<i class='fas fa-book-open'></i> Primary"
-      url: "/tpmm/"
-      btn_class: "btn--light-outline"
+    - label: "<i class='fas fa-graduation-cap'></i> Explorar módulos"
+      url: "#modulos"
+    - label: "<i class='fas fa-circle-info'></i> Qué es Surfing Circuits"
+      url: "/about/"
 excerpt: >
   Aprendizaje técnico basado en la práctica, los proyectos y la experiencia real.
 feature_row:
@@ -30,30 +22,22 @@ feature_row:
     url: "/tpmm/"
     btn_class: "btn--primary"
     btn_label: "Acceder al curso"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
+  - image_path: /assets/images/tpmm_splash.jpg
+    alt: "FLU"
+    title: "Técnicas y procesos de montaje y mantenimiento de equipos electrónicos"
     excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+    url: "/tpmm/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
+  - image_path: /assets/images/tpmm_splash.jpg
+    alt: "FAB"
+    title: "Sistemas electromecánicos y de fluidos"
     excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+    url: "/tpmm/"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
 ---
 
+<div id="modulos"></div>
+
 {% include feature_row %}
-
-## Prueba de botones
-
-<div style="margin: 2em 0;">
-  <a href="#" class="btn">Normal</a>
-  <a href="#" class="btn--primary">Primary</a>
-  <a href="#" class="btn--inverse">Inverse</a>
-  <a href="#" class="btn--light-outline">Light Outline</a>
-</div>
-
