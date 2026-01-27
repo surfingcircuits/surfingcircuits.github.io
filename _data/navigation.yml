@@ -1,13 +1,17 @@
 # main links
 main:
-  - title: "Posts"
-    url: /year-archive/
-  - title: "TPMM"
-    url: /tpmm/
-  - title: "FLU"
-    url: /flu/
-  - title: "FAB"
-    url: /fab/
+  - title: "GitHub"
+    url: https://github.com/surfingcircuits
+  - titl: "Módulos"
+    url: "/#modulos"
+  #- title: "Posts"
+  #  url: /year-archive/
+  #- title: "TPMM"
+  #  url: /tpmm/
+  #- title: "FLU"
+  #  url: /flu/
+  #- title: "FAB"
+  #  url: /fab/
   #- title: "Categories"
   #  url: /categories/
   #- title: "Tags"
@@ -46,6 +50,7 @@ tpmm:
   - title: "UP5: Profundización en el uso de Kicad"
   - title: "UP6: Shield SMD para Arduino UNO"
   - title: "UP7: Shield de control para el TPMMbot"
+  
 # Índice para las publicaciones de FLU
 flu:
   - title: "UP1: Elementos mecánicos y técnicas de unión"
