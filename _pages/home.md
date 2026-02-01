@@ -10,7 +10,7 @@ header:
   actions:
     - label: "<i class='fas fa-graduation-cap'></i> Explorar módulos"
       url: "#modulos"
-    - label: "<i class='fas fa-circle-info'></i> ¿Qué es *Surfing Circuits*?"
+    - label: "<i class='fas fa-info-circle'></i> ¿Qué es <em>Surfing Circuits</em>?"
       url: "/about/"
 excerpt: >
   Aprendizaje técnico basado en la práctica, los proyectos y la experiencia real.
@@ -18,31 +18,31 @@ feature_row:
   - image_path: /assets/images/tpmm_splash.jpg
     alt: "TPMM"
     title: "TPMM"
-    excerpt: "Índice de los contenidos del módulo **Técnicas y procesos de montaje y mantenimiento de equipos electrónicos**"
+    excerpt: "Procedimientos, prácticas y técnicas del diseño, montaje y mantenimiento electrónico."
     url: "/tpmm/"
     btn_class: "btn--primary"
     btn_label: "Acceder al curso"
   - image_path: /assets/images/flu_splash.jpg
     alt: "FLU"
     title: "FLU"
-    excerpt: "Índice de los contenidos del módulo **Sistemas electromecánicos y de fluidos**"
+    excerpt: "Estudio práctico de sistemas electromecánicos y de control de fluidos."
     url: "/flu/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "Acceder al curso"
   - image_path: /assets/images/fab_splash.jpg
     alt: "FAB"
     title: "FAB"
-    excerpt: "Índice de los contenidos del módulo optativo **Fabricación digital**"
+    excerpt: "Prototipado y fabricación digital orientados a la resolución de problemas."
     url: "/fab/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "Acceder al curso"
   - image_path: /assets/images/programming_splash.jpg
     alt: "Programación"
     title: "Programación"
-    excerpt: "Prácticas guiadas para aprender programación principalmente utilizando la plataforma **Arduino**"
+    excerpt: "Programación práctica mediante ejercicios y proyectos guiados con microcontroladores."
     url: "/programming/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Acceder al curso"      
 ---
 
 <div id="modulos"></div>
