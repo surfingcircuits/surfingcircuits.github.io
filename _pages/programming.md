@@ -43,7 +43,6 @@ void loop() {
 ```
 
 ```cpp
-{: .line-numbers}
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
 }
@@ -55,11 +54,12 @@ void loop() {
   delay(500);
 }
 ```
+{: .line-numbers}
 
 ```cpp
-{: .no-copy}
 int ledPin = 13;
 ```
+{: .no-copy}
 
 {% highlight cpp linenos %}
 void setup() {
@@ -73,8 +73,3 @@ void loop() {
   delay(1000);
 }
 {% endhighlight %}
-
-```cpp
-{: .line-numbers .no-copy}
-int ledPin = 13;
-```
