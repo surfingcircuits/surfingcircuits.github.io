@@ -61,6 +61,19 @@ void loop() {
 int ledPin = 13;
 ```
 
+{% highlight cpp linenos %}
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(1000);
+  digitalWrite(LED_BUILTIN, LOW);
+  delay(1000);
+}
+{% endhighlight %}
+
 ```cpp
 {: .line-numbers .no-copy}
 int ledPin = 13;
