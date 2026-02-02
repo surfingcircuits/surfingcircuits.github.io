@@ -109,7 +109,12 @@ collections:
   flu:
     output: true
     permalink: /flu/:path/
-
+  fab:
+    output: true
+    permalink: /fab/:path/
+  programming:
+    output: true
+    permalink: /programming/:path/
 
 # Site Author
 author:
@@ -219,6 +224,8 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+# Activar botón de copiar código
+enable_copy_code_button: true
 
 # Sass/SCSS
 sass:
