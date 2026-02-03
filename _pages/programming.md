@@ -12,11 +12,11 @@ sidebar:
 ---
 
 
-- [P01_arduino_digital_io](/programming/P01_arduino_digital_io.md)
-- [P02_anti-bouncing](/programming/P02_anti-bouncing.md)
-- [P03_array_LEDs](/programming/P03_array_LEDs.md)
-- [P04_breathing_RGB](/programming/P04_breathing_RGB.md)
-- [P05_LDR](/programming/P05_LDR.md)
+- [P01_arduino_digital_io](/programming/P01_arduino_digital_io)
+- [P02_anti-bouncing](/programming/P02_anti-bouncing)
+- [P03_array_LEDs](/programming/P03_array_LEDs)
+- [P04_breathing_RGB](/programming/P04_breathing_RGB)
+- [P05_LDR](/programming/P05_LDR)
 
 
 
