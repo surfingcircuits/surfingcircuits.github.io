@@ -59,7 +59,8 @@ toc_sticky: true
 
 ### Conexión del LED
 
-**Qué se va a hacer:**  
+**Qué se va a hacer:** 
+
 Conectar un LED para que pueda ser controlado por Arduino.
 
 **Cómo hacerlo:**
@@ -81,7 +82,8 @@ Conectar un LED para que pueda ser controlado por Arduino.
 
 ### Conexión del pulsador
 
-**Qué se va a hacer:**  
+**Qué se va a hacer:**
+
 Conectar un pulsador para que Arduino pueda leer su estado.
 
 **Cómo hacerlo:**
@@ -100,7 +102,8 @@ Conectar un pulsador para que Arduino pueda leer su estado.
 
 ### Paso 1: Crear el proyecto
 
-**Qué se va a hacer:**  
+**Qué se va a hacer:**
+
 Crear un nuevo programa (sketch) en Arduino.
 
 **Cómo hacerlo:**
@@ -117,11 +120,13 @@ Crear un nuevo programa (sketch) en Arduino.
 
 Al crear un sketch nuevo aparece este código base:
 
+```cpp
     void setup() {
     }
 
     void loop() {
     }
+```
 
 **Qué significa:**
 
@@ -132,15 +137,18 @@ Al crear un sketch nuevo aparece este código base:
 
 ### Paso 3: Configurar los pines
 
-**Qué se va a hacer:**  
+**Qué se va a hacer:**
+
 Indicar a Arduino qué pines se usarán como entrada y como salida.
 
 **Cómo hacerlo:**
 
 Dentro de la función `setup()`, escribe:
 
+```cpp
     pinMode(8, OUTPUT);
     pinMode(2, INPUT_PULLUP);
+```
 
 **Interpretación:**
 
@@ -151,7 +159,8 @@ Dentro de la función `setup()`, escribe:
 
 ### Paso 4: Leer el estado del pulsador
 
-**Qué se va a hacer:**  
+**Qué se va a hacer:**
+
 Leer el estado eléctrico del pulsador.
 
 **Cómo hacerlo:**
@@ -166,18 +175,21 @@ Esto guarda en la variable `estadoPulsador` el valor leído del pin.
 
 ### Paso 5: Tomar una decisión y actuar
 
-**Qué se va a hacer:**  
+**Qué se va a hacer:**
+
 Encender o apagar el LED en función del estado del pulsador.
 
 **Cómo hacerlo:**
 
 Añade a continuación:
 
+```cpp
     if (estadoPulsador == LOW) {
         digitalWrite(8, HIGH);
     } else {
         digitalWrite(8, LOW);
     }
+```
 
 **Qué ocurre aquí:**
 
