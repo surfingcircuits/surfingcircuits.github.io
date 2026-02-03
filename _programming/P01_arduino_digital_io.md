@@ -1,9 +1,10 @@
 ---
 title: "P01 - Entradas y salidas digitales básicas con Arduino"
 layout: single
-date: 2026-02-03
-excerpt: "Primer contacto con Arduino. Aprenderás a utilizar entradas y salidas digitales mediante LEDs y pulsadores, comprendiendo la estructura básica de un programa y la interacción con el hardware."
+date: 2025-09-18
+excerpt: "Primer contacto con Arduino. Aprenderás a utilizar entradas y salidas digitales mediante LEDs y pulsadores, comprendiendo la estructura básica de un programa y la interacción entre software y hardware."
 platform: arduino
+# Table of contents - shown in right side
 toc: true
 toc_label: "Índice"
 toc_icon: "list"
@@ -15,42 +16,42 @@ toc_sticky: true
 >ℹ️ **Empieza aquí:**
 >
 > Arduino es una plataforma de desarrollo orientada a la creación de sistemas electrónicos interactivos.  
-> En esta primera práctica aprenderás a **controlar salidas digitales** y **leer entradas digitales**, sentando las bases de toda la programación posterior.
+> En esta práctica aprenderás a **controlar salidas digitales** y **leer entradas digitales**, sentando las bases de toda la programación posterior.
 >
-> El objetivo no es solo encender un LED, sino **entender cómo el software interactúa con el hardware**, cómo se estructura un programa y cómo se toman decisiones en función de una entrada.
+> El objetivo no es solo encender un LED, sino **comprender cómo el software interactúa con el hardware**, cómo se estructura un programa en Arduino y cómo se toman decisiones a partir de una entrada física.
 {: .notice--info}
 
 ---
 
 ## 🚀 Objetivos
 
-**•** Comprender la estructura básica de un programa en Arduino (`setup()` y `loop()`).  
-**•** Configurar pines digitales como entrada y como salida.  
-**•** Leer el estado de un pulsador mediante una entrada digital.  
-**•** Controlar un LED en función del estado de una entrada.  
-**•** Introducir buenas prácticas básicas de cableado y programación.  
+**•**&thinsp;Comprender la estructura básica de un programa en Arduino (`setup()` y `loop()`).  
+**•**&thinsp;Configurar pines digitales como entrada y como salida.  
+**•**&thinsp;Leer el estado de un pulsador mediante una entrada digital.  
+**•**&thinsp;Controlar un LED en función del estado de una entrada.  
+**•**&thinsp;Introducir buenas prácticas básicas de cableado y programación.  
 
 ---
 
 ## 🧩 Contenidos trabajados
 
-**•** Entradas digitales (`digitalRead`).  
-**•** Salidas digitales (`digitalWrite`).  
-**•** Uso de resistencias pull-up internas.  
-**•** Estructura básica de un sketch de Arduino.  
-**•** Lógica condicional (`if / else`).  
+**•**&thinsp;Entradas digitales (`digitalRead`).  
+**•**&thinsp;Salidas digitales (`digitalWrite`).  
+**•**&thinsp;Uso de resistencias pull-up internas.  
+**•**&thinsp;Variables y estructuras condicionales (`if / else`).  
+**•**&thinsp;Estructura básica de un sketch de Arduino.  
 
 ---
 
 ## 💻 Materiales y recursos
 
-**•** Arduino UNO.  
-**•** Protoboard.  
-**•** 1 LED (cualquier color).  
-**•** 1 resistencia (220 Ω – 330 Ω).  
-**•** 1 pulsador.  
-**•** Cables Dupont macho-macho.  
-**•** Ordenador con **Arduino IDE** instalado.  
+**•**&thinsp;Arduino UNO.  
+**•**&thinsp;Protoboard.  
+**•**&thinsp;1 LED (cualquier color).  
+**•**&thinsp;1 resistencia (220 Ω – 330 Ω).  
+**•**&thinsp;1 pulsador.  
+**•**&thinsp;Cables Dupont macho-macho.  
+**•**&thinsp;Ordenador con **Arduino IDE** instalado.  
 
 ---
 
@@ -58,89 +59,165 @@ toc_sticky: true
 
 ### Conexión del LED
 
-**1.** Coloca el LED en la protoboard.  
-**2.** Conecta la **patilla larga (ánodo)** del LED al **pin digital 8** de Arduino **a través de una resistencia**.  
-**3.** Conecta la **patilla corta (cátodo)** del LED a **GND**.
+**Qué se va a hacer:**  
+Conectar un LED para que pueda ser controlado por Arduino.
+
+**Cómo hacerlo:**
+
+**1.**&thinsp;Coloca el LED en la protoboard.  
+**2.**&thinsp;Identifica sus patillas:  
+- Patilla larga → ánodo (positivo).  
+- Patilla corta → cátodo (negativo).  
+
+**3.**&thinsp;Realiza las conexiones:  
+- Ánodo → resistencia → pin digital **8** de Arduino.  
+- Cátodo → **GND**.
 
 >⚠️ **Atención:**  
-> Nunca conectes un LED directamente a un pin sin resistencia.
+> El LED debe conectarse siempre con una resistencia en serie para limitar la corriente.
 {: .notice--warning}
 
 ---
 
 ### Conexión del pulsador
 
-**1.** Coloca el pulsador en la protoboard.  
-**2.** Conecta uno de sus terminales a **GND**.  
-**3.** Conecta el terminal opuesto al **pin digital 2** de Arduino.
+**Qué se va a hacer:**  
+Conectar un pulsador para que Arduino pueda leer su estado.
+
+**Cómo hacerlo:**
+
+**1.**&thinsp;Coloca el pulsador en la protoboard.  
+**2.**&thinsp;Conecta uno de sus terminales a **GND**.  
+**3.**&thinsp;Conecta el terminal opuesto al pin digital **2** de Arduino.
 
 >💡 **Nota:**  
-> En esta práctica se utilizará la **resistencia pull-up interna** del microcontrolador.
+> Se utilizará la **resistencia pull-up interna** del microcontrolador, por lo que no es necesario añadir resistencias externas.
 {: .notice--info}
 
 ---
 
 ## 🧭 Desarrollo de la práctica
 
-### Crear el proyecto
+### Paso 1: Crear el proyecto
 
-**1.** Abre el **Arduino IDE**.  
-**2.** Crea un nuevo sketch y guárdalo como:  
+**Qué se va a hacer:**  
+Crear un nuevo programa (sketch) en Arduino.
+
+**Cómo hacerlo:**
+
+**1.**&thinsp;Abre el **Arduino IDE**.  
+**2.**&thinsp;Selecciona **Archivo → Nuevo**.  
+**3.**&thinsp;Guarda el archivo con el nombre:  
 
 - `P01_IO_Digital_ApellidoNombre`
 
 ---
 
-### Estructura básica del programa
+### Paso 2: Entender la estructura del programa
 
-Todo programa en Arduino tiene dos funciones principales:
+Al crear un sketch nuevo aparece este código base:
 
-- `setup()` → se ejecuta **una sola vez** al arrancar la placa.  
-- `loop()` → se ejecuta **de forma continua** mientras Arduino esté encendido.
+    void setup() {
+    }
+
+    void loop() {
+    }
+
+**Qué significa:**
+
+- `setup()` → se ejecuta **una sola vez** al arrancar Arduino.  
+- `loop()` → se ejecuta **continuamente**, en bucle, mientras Arduino esté encendido.
 
 ---
 
-### Configuración de pines
+### Paso 3: Configurar los pines
 
-Dentro de la función `setup()` se deben configurar los pines:
-```cpp
+**Qué se va a hacer:**  
+Indicar a Arduino qué pines se usarán como entrada y como salida.
+
+**Cómo hacerlo:**
+
+Dentro de la función `setup()`, escribe:
+
     pinMode(8, OUTPUT);
     pinMode(2, INPUT_PULLUP);
-```
+
+**Interpretación:**
+
+- Pin 8 → salida para controlar el LED.  
+- Pin 2 → entrada para leer el pulsador, con pull-up interno activado.
 
 ---
 
-### Control del LED mediante el pulsador
+### Paso 4: Leer el estado del pulsador
 
-Dentro de la función `loop()`:
+**Qué se va a hacer:**  
+Leer el estado eléctrico del pulsador.
 
-**1.** Lee el estado del pulsador con `digitalRead(2)`.  
-**2.** Si el valor leído es `LOW`, el pulsador está presionado.  
-**3.** Enciende el LED cuando el pulsador esté presionado.  
-**4.** Apaga el LED cuando el pulsador esté suelto.
+**Cómo hacerlo:**
 
->💡 **Pista:**  
+Dentro de `loop()`, escribe:
+
+    int estadoPulsador = digitalRead(2);
+
+Esto guarda en la variable `estadoPulsador` el valor leído del pin.
+
+---
+
+### Paso 5: Tomar una decisión y actuar
+
+**Qué se va a hacer:**  
+Encender o apagar el LED en función del estado del pulsador.
+
+**Cómo hacerlo:**
+
+Añade a continuación:
+
+    if (estadoPulsador == LOW) {
+        digitalWrite(8, HIGH);
+    } else {
+        digitalWrite(8, LOW);
+    }
+
+**Qué ocurre aquí:**
+
+- Si el pulsador está presionado (`LOW`), el LED se enciende.  
+- Si no lo está (`HIGH`), el LED se apaga.
+
+>💡 **Importante:**  
 > Al usar `INPUT_PULLUP`, la lógica del pulsador queda invertida.
 {: .notice--info}
 
 ---
 
+## ▶️ Cargar el programa en Arduino
+
+**1.**&thinsp;Conecta Arduino al ordenador mediante USB.  
+**2.**&thinsp;Selecciona la placa y el puerto correctos en el IDE.  
+**3.**&thinsp;Pulsa **Verificar (✓)** para comprobar errores.  
+**4.**&thinsp;Pulsa **Subir (→)** para cargar el programa.  
+
+---
+
 ## ✅ Comprobación de funcionamiento
 
-- Pulsador presionado → LED encendido  
-- Pulsador suelto → LED apagado  
+El comportamiento esperado es:
+
+- Pulsador presionado → LED encendido.  
+- Pulsador suelto → LED apagado.
 
 Si no funciona correctamente:
-- Revisa el cableado.  
-- Comprueba que los pines coinciden con el código.  
+- revisa el cableado,  
+- comprueba los números de pin,  
+- asegúrate de que el código está dentro de `setup()` y `loop()`.
 
 ---
 
 ## 📦 Entrega
 
-**•** Archivo `.ino` correctamente comentado.  
-**•** Fotografía clara del montaje.  
-**•** Breve explicación escrita del funcionamiento del programa (5–10 líneas).  
+**•**&thinsp;Archivo `.ino` correctamente comentado.  
+**•**&thinsp;Fotografía clara del montaje en la protoboard.  
+**•**&thinsp;Breve explicación escrita del funcionamiento del programa.  
 
 ---
 
@@ -148,14 +225,14 @@ Si no funciona correctamente:
 
 | Criterio | Excelente (9–10) | Adecuado (6–8) | Insuficiente (≤5) |
 |--------|------------------|----------------|-------------------|
-| Montaje eléctrico | Correcto y ordenado | Funciona con errores menores | Incorrecto |
-| Funcionamiento | Totalmente correcto | Funciona parcialmente | No funciona |
-| Código | Claro y comentado | Funcional pero mejorable | Desordenado |
-| Uso de E/S | Correcto y justificado | Correcto sin justificar | Incorrecto |
+| Montaje eléctrico | Correcto, limpio y seguro | Funciona con pequeños errores | Incorrecto |
+| Funcionamiento | Respuesta totalmente correcta | Funciona parcialmente | No funciona |
+| Código | Claro, ordenado y comentado | Funcional pero mejorable | Desordenado |
+| Uso de E/S | Uso correcto y justificado | Uso correcto sin justificar | Uso incorrecto |
 | Documentación | Clara y precisa | Básica | Inexistente |
 
 ---
 
-## 🎯 Para pensar
+## 🎯 Para pensar (opcional)
 
-> ¿Por qué es importante definir el estado de una entrada cuando el pulsador no está presionado?
+> ¿Por qué es importante que un programa conozca el estado de una entrada antes de tomar una decisión?
