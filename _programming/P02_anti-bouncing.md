@@ -1,7 +1,7 @@
 ---
 title: "P02 - Control por eventos y antirrebote de pulsadores"
 layout: single
-date: 2025-02-03
+date: 2026-02-03
 excerpt: "Aprenderás a detectar pulsaciones válidas de un botón, implementar antirrebote por software y controlar el comportamiento de un LED mediante eventos, introduciendo lógica más avanzada que un encendido directo."
 platform: arduino
 # Table of contents - shown in right side
@@ -62,7 +62,8 @@ toc_sticky: true
 
 ### Conexión del LED
 
-**Qué se va a hacer:**  
+**Qué se va a hacer:**
+
 Conectar el LED que se controlará mediante eventos.
 
 **Cómo hacerlo:**
@@ -76,6 +77,7 @@ Conectar el LED que se controlará mediante eventos.
 ### Conexión del pulsador
 
 **Qué se va a hacer:**  
+
 Conectar el pulsador cuya pulsación se leerá correctamente.
 
 **Cómo hacerlo:**
@@ -91,6 +93,7 @@ Conectar el pulsador cuya pulsación se leerá correctamente.
 ### Paso 1: Crear el proyecto
 
 **Qué se va a hacer:**  
+
 Crear un nuevo sketch para esta práctica.
 
 **Cómo hacerlo:**
@@ -107,11 +110,14 @@ Crear un nuevo sketch para esta práctica.
 
 Dentro de `setup()` escribe:
 
+```cpp
     pinMode(8, OUTPUT);
     pinMode(2, INPUT_PULLUP);
     Serial.begin(9600);
+```
 
 **Qué ocurre aquí:**  
+
 - Pin 8 → salida para LED  
 - Pin 2 → entrada del pulsador  
 - `Serial.begin(9600)` → inicializa comunicación con el ordenador  
@@ -122,13 +128,16 @@ Dentro de `setup()` escribe:
 
 Antes de `setup()` declara:
 
+```cpp
     int estadoPulsador;
     int estadoAnterior = HIGH;
     bool estadoLED = false;
     unsigned long tiempoAnterior = 0;
     const unsigned long debounceDelay = 50;
+```
 
 **Qué significa:**  
+
 - `estadoPulsador` → lectura actual del botón  
 - `estadoAnterior` → lectura anterior  
 - `estadoLED` → estado del LED  
