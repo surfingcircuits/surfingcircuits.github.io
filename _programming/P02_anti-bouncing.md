@@ -1,7 +1,7 @@
 ---
 title: "P02 - Control por eventos y antirrebote de pulsadores"
 layout: single
-date: 2026-02-03
+date: 2026-02-10
 excerpt: "Aprenderás a detectar pulsaciones válidas de un botón, implementar antirrebote por software y controlar el comportamiento de un LED mediante eventos, introduciendo lógica más avanzada que un encendido directo."
 platform: arduino
 # Table of contents - shown in right side
@@ -86,6 +86,8 @@ Conectar el pulsador cuya pulsación se leerá correctamente.
 **2.**&thinsp;Terminal → **GND**  
 **3.**&thinsp;Terminal opuesto → pin digital **2** (usando pull-up interno)
 
+![Montaje de la práctica P02](/assets/programming/P01_montaje.png "Montaje de la práctica P02")
+
 ---
 
 ## 🧭 Desarrollo de la práctica
@@ -111,15 +113,18 @@ Crear un nuevo sketch para esta práctica.
 Dentro de `setup()` escribe:
 
 ```cpp
-    pinMode(8, OUTPUT);
-    pinMode(2, INPUT_PULLUP);
+    const int pinLED = 8;
+    const int pinPulsador = 2;
+    
+    pinMode(pinLED, OUTPUT);
+    pinMode(pinPulsador, INPUT_PULLUP);
     Serial.begin(9600);
 ```
 
 **Qué ocurre aquí:**  
 
-- Pin 8 → salida para LED  
-- Pin 2 → entrada del pulsador  
+- pinLED → salida para LED  
+- pinPulsador → entrada del pulsador  
 - `Serial.begin(9600)` → inicializa comunicación con el ordenador  
 
 ---
@@ -129,50 +134,66 @@ Dentro de `setup()` escribe:
 Antes de `setup()` declara:
 
 ```cpp
-    int estadoPulsador;
-    int estadoAnterior = HIGH;
+    int lecturaPulsador;
+    int ultimaLectura = HIGH;
+    int estadoEstable = HIGH;
+    
     bool estadoLED = false;
+    
     unsigned long tiempoAnterior = 0;
     const unsigned long debounceDelay = 50;
 ```
 
 **Qué significa:**  
 
-- `estadoPulsador` → lectura actual del botón  
-- `estadoAnterior` → lectura anterior  
-- `estadoLED` → estado del LED  
-- `tiempoAnterior` → momento del último cambio válido  
-- `debounceDelay` → tiempo mínimo para ignorar rebotes
-
+- `lecturaPulsador` → lectura actual del botón  
+- `ultimaLectura` → última lectura detectada
+- `estadoEstable` → estado confirmado tras el antirebote
+- `estadoLED` → estado actual del LED
+- `tiempoAnterior` → instante del último cambio detectado
+- `debounceDelay` → tiempo mínimo para validar el cambio
+  
 ---
 
 ### Paso 4: Leer pulsaciones y aplicar antirrebote
 
 Dentro de `loop()`:
 
-**1.**&thinsp;Leer el estado del pulsador:
+**1.**&thinsp;Leer el estado actual del pulsador:
 
-    estadoPulsador = digitalRead(2);
+```cpp
+    lecturaPulsador = digitalRead(pinPulsador);
+```
 
-**2.**&thinsp;Verificar si ha cambiado respecto al estado anterior:
+**2.**&thinsp;Si la lectura cambia, reiniciar el temporizador:
 
-    if (estadoPulsador != estadoAnterior) {
-        tiempoAnterior = millis(); // reinicia temporizador
+```cpp
+    if (lecturaPulsador != ultimaLectura) {
+        tiempoAnterior = millis();
     }
+```
 
-**3.**&thinsp;Esperar tiempo de antirrebote:
+**3.**&thinsp;Comprobar si el estado se mantiene estable el tiempo suficiente:
 
+```cpp
     if ((millis() - tiempoAnterior) > debounceDelay) {
-        if (estadoPulsador == LOW && estadoAnterior == HIGH) {
-            estadoLED = !estadoLED;          // cambiar estado del LED
-            digitalWrite(8, estadoLED ? HIGH : LOW);
-            Serial.println(estadoLED ? "LED encendido" : "LED apagado");
+        if (lecturaPulsador != estadoEstable) {
+            estadoEstable = lecturaPulsador;
+    
+            if (estadoEstable == LOW) {
+                estadoLED = !estadoLED;
+                digitalWrite(pinLED, estadoLED ? HIGH : LOW);
+                Serial.println(estadoLED ? "LED encendido" : "LED apagado");
+            }
         }
     }
+```
 
-**4.**&thinsp;Actualizar el estado anterior:
+**4.**&thinsp;Guardar la lectura para la siguiente iteración:
 
-    estadoAnterior = estadoPulsador;
+```cpp
+ultimaLectura = lecturaPulsador;
+```
 
 ---
 
@@ -195,9 +216,10 @@ Comprobar que cada pulsación válida genera un mensaje único.
 
 ## ✅ Comprobación de funcionamiento
 
-- Cada pulsación cambia el estado del LED.  
-- El LED permanece en su estado aunque se suelte el botón.  
-- No hay comportamiento errático por rebote.
+- Cada pulsación cambia el estado del LED una sola vez
+- El LED conserva su estado al soltar el botón
+- El rebote mecánico queda correctamente filtrado
+- El código es seguro, legible y escalable
 
 ---
 
