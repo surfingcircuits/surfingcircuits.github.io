@@ -1,7 +1,7 @@
 ---
 title: "P01 - Entradas y salidas digitales básicas con Arduino"
 layout: single
-date: 2025-09-18
+date: 2026-02-10
 excerpt: "Primer contacto con Arduino. Aprenderás a utilizar entradas y salidas digitales mediante LEDs y pulsadores, comprendiendo la estructura básica de un programa y la interacción entre software y hardware."
 platform: arduino
 # Table of contents - shown in right side
@@ -95,6 +95,8 @@ Conectar un pulsador para que Arduino pueda leer su estado.
 >💡 **Nota:**  
 > Se utilizará la **resistencia pull-up interna** del microcontrolador, por lo que no es necesario añadir resistencias externas.
 {: .notice--info}
+
+![Montaje de la práctica P01](/assets/programming/P01_montaje.png "Montaje de la práctica P01")
 
 ---
 
