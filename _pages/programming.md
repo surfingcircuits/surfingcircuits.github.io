@@ -111,3 +111,48 @@ Lectura de entradas analógicas y adaptación a condiciones de luz.
 </span>
 
 ---
+
+<!-- Texto blanco, colores ligeramente ajustados para buen contraste -->
+<span style="background-color:#81C784; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  Básico
+</span>
+
+<span style="background-color:#FFC107; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  Intermedio
+</span>
+
+<span style="background-color:#E57373; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  Avanzado
+</span>
+
+<span style="background-color:#64B5F6; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  ⏱ 2 h
+</span>
+
+<span style="background-color:#B0BEC5; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  Individual
+</span>
+
+---
+
+<!-- Texto negro con opacidad, colores pastel originales -->
+<span style="background-color:#81C784; color:rgba(0,0,0,0.85); padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  Básico
+</span>
+
+<span style="background-color:#FFD54F; color:rgba(0,0,0,0.85); padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  Intermedio
+</span>
+
+<span style="background-color:#E57373; color:rgba(0,0,0,0.85); padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  Avanzado
+</span>
+
+<span style="background-color:#64B5F6; color:rgba(0,0,0,0.85); padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  ⏱ 2 h
+</span>
+
+<span style="background-color:#B0BEC5; color:rgba(0,0,0,0.85); padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em;">
+  Individual
+</span>
+
