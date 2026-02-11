@@ -1,84 +1,73 @@
 ---
-title: "Prueba de bloques de código"
+title: "Programación"
 layout: single
 permalink: /programming/
 toc: true
-toc_label: "Secciones"
-toc_icon: "compass"
+toc_label: "Prácticas:"
+toc_icon: "code"
 toc_sticky: true
 sidebar:
   nav: programming
   sticky: true
 ---
 
+<span style="display: block; text-align: center;"><b>«Prácticas de Programación con Arduino»</b></span>
 
-- [P01_arduino_digital_io](/programming/P01_arduino_digital_io)
-- [P02_anti-bouncing](/programming/P02_anti-bouncing)
-- [P03_array_LEDs](/programming/P03_array_LEDs)
-- [P04_breathing_RGB](/programming/P04_breathing_RGB)
-- [P05_LDR](/programming/P05_LDR)
-
-
-
-## Introducción
-
-Esta página sirve para comprobar el funcionamiento de los distintos tipos de bloques de código en **Minimal Mistakes**:
-
-- Botón **Copy**
-- Números de línea
-- Bloques sin botón
-- Código inline
+En este espacio encontrarás las prácticas guiadas del módulo de programación.
+Las actividades están organizadas por bloques temáticos y nivel progresivo.
 
 ---
 
-## 1. Bloque normal (con botón Copy)
+## 🧩 Bloque 1 · Entradas y salidas digitales
 
-Este bloque debería mostrar:
-- resaltado de sintaxis
-- **botón Copy**
-- sin números de línea
+<a href="/programming/P01_arduino_digital_io" class="btn btn--primary btn--large btn--block">Práctica 01 · E/S Digitales</a>
 
-```cpp
-void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+<span class="btn btn--success btn--small">Básico</span>
+<span class="btn btn--info btn--small">⏱ 1,5 h</span>
+<span class="btn btn--inverse btn--small">Individual</span>
 
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-}
-```
+Primer contacto con la configuración y uso de pines digitales en Arduino.
 
-```cpp
-void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+<br>
 
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(500);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(500);
-}
-```
-{: .line-numbers}
+<a href="/programming/P02_anti-bouncing" class="btn btn--primary btn--large btn--block">Práctica 02 · Anti-bouncing</a>
 
-```cpp
-int ledPin = 13;
-```
-{: .no-copy}
+<span class="btn btn--warning btn--small">Intermedio</span>
+<span class="btn btn--info btn--small">⏱ 2 h</span>
+<span class="btn btn--inverse btn--small">Individual</span>
 
-{% highlight cpp linenos %}
-void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
-}
+Tratamiento del rebote mecánico en pulsadores mediante software.
 
-void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(1000);
-}
-{% endhighlight %}
+<br>
+
+<a href="/programming/P03_array_LEDs" class="btn btn--primary btn--large btn--block">Práctica 03 · Arrays y LEDs</a>
+
+<span class="btn btn--warning btn--small">Intermedio</span>
+<span class="btn btn--info btn--small">⏱ 2 h</span>
+<span class="btn btn--inverse btn--small">Individual</span>
+
+Uso de arrays para gestionar múltiples salidas digitales.
+
+---
+
+## 🌈 Bloque 2 · Control analógico y efectos
+
+<a href="/programming/P04_breathing_RGB" class="btn btn--primary btn--large btn--block">Práctica 04 · RGB "Breathing"</a>
+
+<span class="btn btn--warning btn--small">Intermedio</span>
+<span class="btn btn--info btn--small">⏱ 2–3 h</span>
+<span class="btn btn--inverse btn--small">Individual</span>
+
+Generación de efectos de iluminación usando PWM.
+
+<br>
+
+<a href="/programming/P05_LDR" class="btn btn--primary btn--large btn--block">Práctica 05 · Sensor LDR</a>
+
+<span class="btn btn--success btn--small">Básico</span>
+<span class="btn btn--info btn--small">⏱ 1,5 h</span>
+<span class="btn btn--inverse btn--small">Individual</span>
+
+Lectura de entradas analógicas y adaptación a condiciones de luz.
+
+---
