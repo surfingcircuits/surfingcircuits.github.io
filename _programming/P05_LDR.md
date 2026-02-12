@@ -1,7 +1,7 @@
 ---
 title: "P05 - Lectura de LDR y visualización en Monitor Serie"
 layout: single
-date: 2026-02-03
+date: 2026-02-12
 excerpt: "Aprenderás a leer el valor de un LDR con Arduino, convertirlo a niveles de luz y mostrarlo en el Monitor Serie, introduciendo el concepto de entradas analógicas y mapeo de rangos."
 platform: arduino
 # Table of contents - shown in right side
@@ -72,9 +72,9 @@ toc_sticky: true
 
 ### Paso 2: Configurar el Monitor Serie
 
-```cppp
+```cpp
 void setup() {  
-  Serial.begin(9600); // inicializa comunicación serie  
+  Serial.begin(9600);
 }  
 ```
 
@@ -84,8 +84,8 @@ void setup() {
 
 ```cpp
 void loop() {  
-  int valorLDR = analogRead(A0); // lectura analógica (0–1023)  
-  int porcentajeLuz = map(valorLDR, 0, 1023, 0, 100); // mapeo a 0–100%  
+  int valorLDR = analogRead(A0);
+  int porcentajeLuz = map(valorLDR, 0, 1023, 0, 100);
 
   Serial.print("Valor crudo: ");  
   Serial.print(valorLDR);  
@@ -93,7 +93,7 @@ void loop() {
   Serial.print(porcentajeLuz);  
   Serial.println("%");  
 
-  delay(200); // actualizar cada 200 ms  
+  delay(200);
 }  
 ```
 
