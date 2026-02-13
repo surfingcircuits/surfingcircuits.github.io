@@ -115,6 +115,9 @@ collections:
   programming:
     output: true
     permalink: /programming/:path/
+  ltspice:
+    output: true
+    permalink: /ltspice/:path/
 
 # Site Author
 author:
