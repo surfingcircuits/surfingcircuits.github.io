@@ -42,7 +42,14 @@ feature_row:
     excerpt: "Programación práctica mediante ejercicios y proyectos guiados con microcontroladores."
     url: "/programming/"
     btn_class: "btn--primary"
-    btn_label: "Acceder al curso"      
+    btn_label: "Acceder al curso"
+  - image_path: /assets/images/ltspice_splash.jpg
+    alt: "Simulación con LTspice"
+    title: "Simulación con LTspice"
+    excerpt: "Simulaciones guiadas de circuitos electrónicos utilizando el simulador gratuito LTspice."
+    url: "/ltspice/"
+    btn_class: "btn--primary"
+    btn_label: "Acceder al curso"         
 ---
 
 <div id="modulos"></div>
