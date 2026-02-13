@@ -46,7 +46,7 @@ feature_row:
   - image_path: /assets/images/ltspice_splash.jpg
     alt: "Simulación con LTspice"
     title: "Simulación con LTspice"
-    excerpt: "Simulaciones guiadas de circuitos electrónicos utilizando el simulador gratuito LTspice."
+    excerpt: "Simulaciones guiadas de circuitos electrónicos con LTspice."
     url: "/ltspice/"
     btn_class: "btn--primary"
     btn_label: "Acceder al curso"         
