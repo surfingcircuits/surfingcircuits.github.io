@@ -128,6 +128,4 @@ Uso del circuito integrado 74HC595 desde Arduino para controlar salidas.
   Individual
 </span>
 
-
-
 ---
