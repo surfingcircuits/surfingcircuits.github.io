@@ -128,4 +128,76 @@ Uso del circuito integrado 74HC595 desde Arduino para controlar salidas.
   Individual
 </span>
 
+<br><br>
+
+<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+  Práctica 07 · Sistema de alarma
+</a>
+
+Configuración de un sistema de alarma.
+
+<span style="background-color:#81C784; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Básico
+</span>
+<span style="background-color:#64B5F6; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  ⏱ 1,5 h
+</span>
+<span style="background-color:#B0BEC5; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Individual
+</span>
+
+<br><br>
+
+<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+  Práctica 08 · Comandos por puerto serie
+</a>
+
+Interpretación de comandos enviados desde la terminal serie.
+
+<span style="background-color:#81C784; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Básico
+</span>
+<span style="background-color:#64B5F6; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  ⏱ 1,5 h
+</span>
+<span style="background-color:#B0BEC5; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Individual
+</span>
+
+<br><br>
+
+<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+  Práctica 09 · Monitorización del nivel luz
+</a>
+
+Medición y monitorización del nivel de luz.
+
+<span style="background-color:#81C784; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Básico
+</span>
+<span style="background-color:#64B5F6; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  ⏱ 1,5 h
+</span>
+<span style="background-color:#B0BEC5; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Individual
+</span>
+
+<br><br>
+
+<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+  Práctica 10 · Proyecto final
+</a>
+
+Proyecto final de integración.
+
+<span style="background-color:#81C784; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Básico
+</span>
+<span style="background-color:#64B5F6; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  ⏱ 1,5 h
+</span>
+<span style="background-color:#B0BEC5; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Individual
+</span>
+
 ---
