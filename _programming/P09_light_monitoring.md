@@ -1,7 +1,7 @@
 ---
 title: "P09 - Sistema de monitorización de luz con alarma configurable"
 layout: single
-date: 2026-17-02
+date: 2026-02-17
 excerpt: "Desarrollarás un sistema completo que mide la luz con un LDR, muestra el valor por el Monitor Serie y activa una alarma luminosa y acústica cuando se supera un umbral configurable por comandos."
 platform: arduino
 # Table of contents - shown in right side
