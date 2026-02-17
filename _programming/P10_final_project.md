@@ -1,7 +1,7 @@
 ---
 title: "P10 - Proyecto final: Sistema embebido multitarea con interfaz serie, RGB y 74HC595"
 layout: single
-date: 2026-17-02
+date: 2026-02-17
 excerpt: "Desarrollarás un sistema embebido completo multitarea que integra sensores, interfaz serie, LED RGB, buzzer y expansión de salidas mediante 74HC595, utilizando una arquitectura modular y máquina de estados."
 platform: arduino
 # Table of contents - shown in right side
