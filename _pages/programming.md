@@ -110,4 +110,24 @@ Lectura de entradas analógicas y adaptación a condiciones de luz.
   Individual
 </span>
 
+<br><br>
+
+<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+  Práctica 06 · Utilización del 74HC595
+</a>
+
+Uso del circuito integrado 74HC595 desde Arduino para controlar salidas.
+
+<span style="background-color:#81C784; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Básico
+</span>
+<span style="background-color:#64B5F6; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  ⏱ 1,5 h
+</span>
+<span style="background-color:#B0BEC5; color:#ffffff; padding:0.25em 0.65em; border-radius:999px; font-size:0.75em; font-weight:600; display:inline-block; margin-right:0.4em; margin-top:0.4em;">
+  Individual
+</span>
+
+
+
 ---
