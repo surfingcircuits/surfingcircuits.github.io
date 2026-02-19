@@ -130,7 +130,7 @@ Uso del circuito integrado 74HC595 desde Arduino para controlar salidas.
 
 <br><br>
 
-<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+<a href="/programming/P07_alarm" class="btn btn--primary btn--large btn--block">
   Práctica 07 · Sistema de alarma
 </a>
 
@@ -148,7 +148,7 @@ Configuración de un sistema de alarma.
 
 <br><br>
 
-<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+<a href="/programming/P08_serial_commands" class="btn btn--primary btn--large btn--block">
   Práctica 08 · Comandos por puerto serie
 </a>
 
@@ -166,7 +166,7 @@ Interpretación de comandos enviados desde la terminal serie.
 
 <br><br>
 
-<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+<a href="/programming/P09_light_monitoring" class="btn btn--primary btn--large btn--block">
   Práctica 09 · Monitorización del nivel luz
 </a>
 
@@ -184,7 +184,7 @@ Medición y monitorización del nivel de luz.
 
 <br><br>
 
-<a href="/programming/P06_74HC595" class="btn btn--primary btn--large btn--block">
+<a href="/programming/P10_final_project" class="btn btn--primary btn--large btn--block">
   Práctica 10 · Proyecto final
 </a>
 
