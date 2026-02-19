@@ -43,7 +43,7 @@ feature_row:
     url: "/programming/"
     btn_class: "btn--primary"
     btn_label: "Acceder al curso"
-  - image_path: /assets/images/ltspice_splash.jpg
+  - image_path: /assets/images/ltspice_logo_splash.jpg
     alt: "Simulación con LTspice"
     title: "Simulación con LTspice"
     excerpt: "Simulaciones guiadas de circuitos electrónicos con LTspice."
